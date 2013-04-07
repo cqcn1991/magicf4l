@@ -1,0 +1,42 @@
+<h1>Listing sites</h1>
+<%= link_to "shuffle", shuffle_sites_path %>
+
+<% if @sites %>
+    <% @sites.each do |site| %>
+      <div class="site">
+        <h5><%= link_to site.title, site.site_url %></h5>
+        <%= simple_format site.description %>
+      </div>
+
+    <% end %>
+
+
+<% end %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Category</th>
+    <th>Site url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sites.each do |site| %>
+  <tr>
+    <td><%= site.title %></td>
+    <td><%= site.description %></td>
+    <td><%= site.category_id %></td>
+    <td><%= site.site_url %></td>
+    <td><%= link_to 'Show', site %></td>
+    <td><%= link_to 'Edit', edit_site_path(site) %></td>
+    <td><%= link_to 'Destroy', site, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Site', new_site_path %>
