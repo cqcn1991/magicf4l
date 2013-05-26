@@ -1,3 +1,5 @@
+
+
 source 'https://rubygems.org'
 
 gem 'rails','3.2.13'
@@ -5,6 +7,8 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
 gem 'font-awesome-rails'
+gem 'nokogiri'
+gem 'imgkit'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
