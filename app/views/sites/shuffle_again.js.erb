@@ -1,2 +1,9 @@
-//$('.sites').hide();
-$('.sites').html('<%= j render(@site) %>');
+$(".sites-shuffled").fadeOut("normal", function() {
+    $("i").fadeIn("normal", function() {
+        $("i").fadeOut("slow", function() {
+            $('.sites-shuffled').html('<%= j render(@site) %>');
+            $(".sites-shuffled").fadeIn("normal");
+        });
+    });
+});
+

@@ -1,4 +1,18 @@
-<%= link_to "Shuffle it", shuffle_again_sites_path, remote: true %>
-<div class="sites">
-  <%= render @site %>
+<div class="row">
+  <div class="span4 offset4">
+
+    <div class="shuffle-sites">
+      <%= link_to "Shuffle it", shuffle_again_sites_path, remote: true, id: "shuffle-btn" %>
+      <div class="sites-wrapper">
+        <i class="icon-spinner icon-spin icon-4x"></i>
+        <div class="sites-shuffled">
+            <%= render @site %>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
 </div>
+

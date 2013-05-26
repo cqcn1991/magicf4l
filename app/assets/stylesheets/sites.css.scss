@@ -1,3 +1,25 @@
 // Place all the styles related to the Sites controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//@import "font-awesome";
+
+.shuffle-sites {
+  margin-top: 50px;
+  .sites-wrapper    {
+    background: none repeat scroll 0 0 #F2F7F6;
+    border-radius: 4px 4px 4px 4px;
+    clear: both;
+    //font-size: 14px;
+    //line-height: 1.2;
+    margin: 10px 0 20px;
+    overflow: hidden;
+    padding: 18px 20px;
+    .sites-shuffled{
+      display: none;
+    }
+
+    i {
+      //display: none;
+    }
+  }
+}
