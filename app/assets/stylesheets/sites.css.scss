@@ -3,6 +3,30 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //@import "font-awesome";
 
+.header {
+  margin-bottom: 20px;
+  .logo {
+    float: left;
+    margin-right: 30px;
+  }
+  .nav {
+    padding-top: 30px;
+  }
+}
+
+.sites {
+  clear: both;
+  .span4 {
+    margin-bottom: 15px;
+  }
+}
+
+.shuffle-nav {
+  a {
+    margin-right: 20px;
+  }
+}
+
 .shuffle-sites {
   margin-top: 50px;
   .sites-wrapper    {

@@ -5,6 +5,7 @@ task :fetch_sites => :environment do
   require 'nokogiri'
   require 'open-uri'
 
+
   url = "http://ruby-china.org/sites"
   doc = Nokogiri::HTML(open(url))
   puts doc.css("title").text

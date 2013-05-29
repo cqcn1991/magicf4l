@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20130406143139) do
     t.text     "description"
     t.integer  "category_id"
     t.string   "site_url"
+    t.string   "photo_url"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end

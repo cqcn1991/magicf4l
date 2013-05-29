@@ -9,6 +9,7 @@ gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'nokogiri'
 gem 'imgkit'
+gem 'pdfkit'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
