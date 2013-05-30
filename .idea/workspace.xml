@@ -42,10 +42,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/sites/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="71" selection-start="607" selection-end="607" vertical-scroll-proportion="-7.75">
+            <state line="7" column="42" selection-start="190" selection-end="190" vertical-scroll-proportion="0.4018127">
               <folding />
             </state>
           </provider>
@@ -54,7 +54,16 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="19" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+            <state line="7" column="18" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="99" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,19 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sites.rake" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/tasks/sites.rake">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="52" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_site.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_site.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sites/_site.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="30" selection-start="99" selection-end="99" vertical-scroll-proportion="0.17220543">
+            <state line="3" column="30" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.0357144">
               <folding />
             </state>
           </provider>
@@ -146,7 +146,6 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/sites/shuffle_again.js.erb" />
         <option value="$PROJECT_DIR$/config/initializers/imgkit.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/initializers/pdfkit.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130406142917_create_sites.rb" />
         <option value="$PROJECT_DIR$/app/views/sites/_form.html.erb" />
@@ -156,8 +155,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/sites.css.scss" />
         <option value="$PROJECT_DIR$/lib/tasks/sites_new.rake" />
         <option value="$PROJECT_DIR$/app/views/sites/_site.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/sites/index.html.erb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/sites/index.html.erb" />
       </list>
     </option>
   </component>
@@ -825,11 +825,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130406143139_create_categories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sites/shuffle_again.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="84" selection-start="278" selection-end="278" vertical-scroll-proportion="0.5166163" />
@@ -859,23 +854,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/tasks/sites.rake">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="52" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sites/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="71" selection-start="607" selection-end="607" vertical-scroll-proportion="-7.75">
           <folding />
         </state>
       </provider>
@@ -915,6 +896,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sites/_site.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="30" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.0357144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="18" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="99" selection-start="534" selection-end="534" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130406142917_create_sites.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="50" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
@@ -922,9 +924,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sites/_site.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/sites/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="99" selection-end="99" vertical-scroll-proportion="0.17220543">
+        <state line="7" column="42" selection-start="190" selection-end="190" vertical-scroll-proportion="0.4018127">
           <folding />
         </state>
       </provider>
