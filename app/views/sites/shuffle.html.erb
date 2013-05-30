@@ -3,12 +3,13 @@
 
     <div class="shuffle-sites">
       <div class="shuffle-nav">
-        <%= link_to "Shuffle it(again)", shuffle_again_sites_path, remote: true, id: "shuffle-btn" %>
+        <%= link_to "Pick one(or again)", shuffle_again_sites_path, remote: true, id: "shuffle-btn" %>
         <%= link_to "Back", sites_path %>
       </div>
 
       <div class="sites-wrapper">
-        <i class="icon-spinner icon-spin icon-4x"></i>
+        <i class="icon-arrow-up icon-4x"></i>
+        <!--<i class="icon-spinner icon-spin icon-4x"></i>-->
         <div class="sites-shuffled">
             <%= render @site %>
         </div>

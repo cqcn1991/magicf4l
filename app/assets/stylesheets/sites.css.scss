@@ -30,6 +30,9 @@
 .shuffle-sites {
   margin-top: 50px;
   .sites-wrapper    {
+    i.icon-spinner {
+    //display: none;
+    }
     background: none repeat scroll 0 0 #F2F7F6;
     border-radius: 4px 4px 4px 4px;
     clear: both;
