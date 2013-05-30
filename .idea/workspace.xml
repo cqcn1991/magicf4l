@@ -4,11 +4,11 @@
     <list default="true" id="6a726319-5e89-41f7-b9ec-be118314c5e2" name="Default" comment="" />
     <ignored path="shuffle.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/routes.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365262704184" ignored="false" />
+    <file path="/routes.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369918068012" ignored="false" />
     <file path="/site.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369667184276" ignored="false" />
     <file path="/category.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365258743317" ignored="false" />
     <file path="/index.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369917692575" ignored="false" />
-    <file path="/sites_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365310264933" ignored="false" />
+    <file path="/sites_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369918086370" ignored="false" />
     <file path="/shuffle.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369821708205" ignored="false" />
     <file path="/_shuffle_again.js.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365309801545" ignored="false" />
     <file path="$PROJECT_DIR$/../gtcracker/app/views/posts/index.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365343794287" ignored="false" />
@@ -45,25 +45,16 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sites/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="3" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-25.392857">
+            <state line="7" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="-4.75">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sites/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="22" selection-start="620" selection-end="620" vertical-scroll-proportion="0.63141996">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="18" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
+            <state line="23" column="22" selection-start="620" selection-end="620" vertical-scroll-proportion="-15.607142">
               <folding />
             </state>
           </provider>
@@ -87,19 +78,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="sites_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/sites_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
+            <state line="15" column="20" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sites_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sites_controller.rb">
+      <file leaf-file-name="admin.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sites/admin.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="6" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
+            <state line="0" column="42" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,6 +123,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="24" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -142,9 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/views/sites/shuffle_again.js.erb" />
         <option value="$PROJECT_DIR$/config/initializers/imgkit.rb" />
         <option value="$PROJECT_DIR$/config/initializers/pdfkit.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130406142917_create_sites.rb" />
@@ -156,8 +153,11 @@
         <option value="$PROJECT_DIR$/app/views/sites/_site.html.erb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/sites/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sites/_form.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/sites_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/sites/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/sites/admin.html.erb" />
       </list>
     </option>
   </component>
@@ -825,16 +825,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/sites/shuffle_again.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="84" selection-start="278" selection-end="278" vertical-scroll-proportion="0.5166163" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/categories.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sites/shuffle.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="41" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
@@ -866,20 +856,6 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="16" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sites_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="272" selection-end="272" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sites/_site.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="30" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.0357144">
           <folding />
         </state>
       </provider>
@@ -919,16 +895,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sites/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/sites/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="3" selection-start="1036" selection-end="1036" vertical-scroll-proportion="-25.392857">
+        <state line="23" column="22" selection-start="620" selection-end="620" vertical-scroll-proportion="-15.607142">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sites/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/sites/_site.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="22" selection-start="620" selection-end="620" vertical-scroll-proportion="0.63141996">
+        <state line="3" column="30" selection-start="99" selection-end="99" vertical-scroll-proportion="-2.0357144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="24" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sites_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="20" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sites/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="-4.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sites/admin.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="42" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

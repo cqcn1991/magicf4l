@@ -1,0 +1,29 @@
+<%= link_to 'New Site', new_site_path   %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Category</th>
+    <th>Site url</th>
+    <th>Photo url</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @sites.each do |site| %>
+      <tr>
+        <td><%= site.title %></td>
+        <td><%= site.description %></td>
+        <td><%= site.category_id %></td>
+        <td><%= site.site_url %></td>
+        <td><%= site.photo_url %></td>
+        <td><%= link_to 'Show', site %></td>
+        <td><%= link_to 'Edit', edit_site_path(site) %></td>
+        <td><%= link_to 'Destroy', site, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br />

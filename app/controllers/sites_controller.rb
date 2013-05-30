@@ -12,6 +12,10 @@ class SitesController < ApplicationController
     end
   end
 
+  def admin
+    @sites =Site.all
+  end
+
 
   def index
     @sites = Site.all

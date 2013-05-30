@@ -4,6 +4,7 @@ Shuffle::Application.routes.draw do
 
   resources :sites  do
     collection do
+      get :admin
       get :shuffle
       get :shuffle_again
     end
