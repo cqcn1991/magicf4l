@@ -1,7 +1,9 @@
 <div class="site">
 
   <a class="thumbnail"  href=<%= site.site_url%> >
+    <% if site.photo_url %>
     <img src=<%= site.photo_url%>>
+    <% end %>
   </a>
   <h5><%= link_to site.title, site.site_url %></h5>
   <%= simple_format site.description %>

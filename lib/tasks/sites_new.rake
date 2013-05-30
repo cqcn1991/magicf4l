@@ -20,17 +20,6 @@ task :fetch_bootstrap_sites => :environment do
         site.update_attributes(:site_url=> href, :photo_url=> photo_href)
         site.save!
       end
-
-          #description=item.css("a")[0]['title']
-        #if title
-        #  original_url=item.css('a.thumbnail')[0]["href"]
-        #  #original_photo_url="http://expo.getbootstrap.com" + item.css("a img")[0]["src"]
-        #  site = Site.where(:title=> title).first_or_create
-        #  site.update_attributes(:description=> description, :site_url=> original_url)
-        #  puts site.title
-        #  puts site.site_url
-        #  site.save!
-        #end
     end
 
 end
