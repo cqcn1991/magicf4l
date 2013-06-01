@@ -1,17 +1,13 @@
 var spinner= '<i class="icon-spinner icon-spin icon-4x"></i>'
-
-
-
-
-
-
 $(".sites-shuffled").fadeOut("normal", function() {
+    $(".sites-wrapper").addClass("animated wobble");
     $("i").fadeIn("normal", function() {
         $("i.icon-arrow-up").replaceWith(spinner);
         $("i").fadeOut("slow", function() {
 
             $('.sites-shuffled').html('<%= j render(@site) %>');
             $(".sites-shuffled").fadeIn("normal");
+            $(".sites-wrapper").removeClass("animated wobble");
         });
     });
 });
