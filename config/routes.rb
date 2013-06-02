@@ -1,4 +1,7 @@
 Shuffle::Application.routes.draw do
+  resources :microposts
+
+
   resources :categories
 
 

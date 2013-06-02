@@ -11,12 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406143139) do
+ActiveRecord::Schema.define(:version => 20130601100325) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "microposts", :force => true do |t|
+    t.text     "content"
+    t.string   "title"
+    t.string   "video_url"
+    t.string   "video_thumbnail_url"
+    t.string   "article_url"
+    t.integer  "user_id"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
   create_table "sites", :force => true do |t|
