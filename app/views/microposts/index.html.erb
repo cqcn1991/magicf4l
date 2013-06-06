@@ -2,14 +2,17 @@
 
 <div class="row">
   <% @microposts.each do |micropost| %>
-    <div class="span3 micropost">
+    <div class="span6 micropost">
        <h5><%= micropost.title %> </h5>
       <% if micropost.video_id %>
-          <%= image_tag(micropost.video_thumbnail_url)  %>
-          <!--<iframe height=300 width=300 src="http://player.youku.com/embed/<%#= micropost.video_id %>" frameborder=0-->
-                  <!--allowfullscreen></iframe>-->
+          <%#= image_tag(micropost.video_thumbnail_url)  %>
+          <iframe  src="http://player.youku.com/embed/<%= micropost.video_id %>" frameborder=0
+                  allowfullscreen></iframe>
+      <% else %>
+
       <% end %>
     </div>
+
 
   <% end %>
 

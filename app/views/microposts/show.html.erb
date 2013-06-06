@@ -8,6 +8,10 @@
     <%= image_tag(@micropost.video_thumbnail_url)  %>
 <% end %>
 
+
+<% if @micropost.article_url %>
+    <%= image_tag @micropost.snapshot_url.to_s %>
+<% end %>
 <p>
   <b>Title:</b>
   <%= @micropost.title %>
