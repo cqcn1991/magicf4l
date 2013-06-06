@@ -8,8 +8,8 @@ gem 'font-awesome-rails'
 gem 'nokogiri'
 gem 'imgkit'
 gem 'pdfkit'
-gem 'httparty'
-gem 'phantomjs'
+#gem 'httparty'
+#gem 'phantomjs'
 gem 'carrierwave'
 
 # Bundle edge Rails instead:
