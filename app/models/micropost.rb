@@ -1,11 +1,12 @@
 class Micropost < ActiveRecord::Base
   #include HTTParty
   #base_uri "https://openapi.youku.com/v2/videos/show.json"
+  #after_create :take_snapshot
   attr_accessible :content, :title, :video_url, :article_url, :user_id, :video_thumbnail_url
 
   mount_uploader :snapshot, SnapshotUploader
 
-  after_create :take_snapshot
+
 
   def video_id
     if !self.video_url.empty?

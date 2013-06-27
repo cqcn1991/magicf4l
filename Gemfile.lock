@@ -68,6 +68,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.21)
     multi_json (1.7.2)
+    newrelic_rpm (3.6.4.122)
     nokogiri (1.5.9-x86-mingw32)
     orm_adapter (0.4.0)
     pdfkit (0.5.3)
@@ -149,6 +150,7 @@ DEPENDENCIES
   font-awesome-rails
   imgkit
   jquery-rails
+  newrelic_rpm
   nokogiri
   pdfkit
   pg

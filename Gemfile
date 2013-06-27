@@ -11,6 +11,9 @@ gem 'pdfkit'
 #gem 'httparty'
 #gem 'phantomjs'
 gem 'carrierwave'
+#gem 'vulcan'
+#gem 'wkhtmltopdf-heroku'
+gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

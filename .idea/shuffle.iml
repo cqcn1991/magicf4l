@@ -45,6 +45,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.3, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.21, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.7.2, ruby-1.9.3-p125) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="newrelic_rpm (v3.6.4.122, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.5.9, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.4.0, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pdfkit (v0.5.3, ruby-1.9.3-p125) [gem]" level="application" />
