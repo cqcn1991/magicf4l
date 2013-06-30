@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="span6 offset3">
+    <h1>Magicf4l</h1>
+    <%= link_to "shuffle", "#" %>
+    <%= link_to "new", new_micropost_path %>
+    <%= link_to "admin panel(test)", microposts_path %>
+    <div class="microposts">
+      <% @microposts.each do |micropost| %>
+          <div class="micropost">
+            <%# if micropost.video_id %>
+            <div class="row">
+              <div class="cover span2">
+                <% if micropost.video_id %>
+                    <%= image_tag(micropost.video_thumbnail_url)  %>
+                <% else %>
+                    <%= image_tag("http://img.bitpixels.com/getthumbnail?code=72621&size=200&url=#{micropost.article_url}") %>
+                <% end %>
+              </div>
+              <div class="info span4">
+                <h5><%= micropost.title %> </h5>
+                <%= simple_format micropost.content %>
+              </div>
+            </div>
+            <a href="<%= micropost.video_url %>">
+              <div class="cover-linkable"></div>
+            </a>
+
+            <!--<iframe  src="http://player.youku.com/embed/<%#= micropost.video_id %>" frameborder=0-->
+            <!--allowfullscreen></iframe>-->
+
+            <%# end %>
+          </div>
+
+
+      <% end %>
+
+    </div>
+  </div>
+</div>
+

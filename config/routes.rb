@@ -1,6 +1,9 @@
 Shuffle::Application.routes.draw do
-  resources :microposts
-
+  resources :microposts  do
+    collection do
+      get :shuffle
+    end
+  end
 
   resources :categories
 
@@ -13,7 +16,7 @@ Shuffle::Application.routes.draw do
     end
   end
 
-  root :to => 'sites#index'
+  root :to => 'microposts#shuffle'
 
 
   # The priority is based upon order of creation:

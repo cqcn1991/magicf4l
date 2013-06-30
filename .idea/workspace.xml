@@ -4,12 +4,12 @@
     <list default="true" id="6a726319-5e89-41f7-b9ec-be118314c5e2" name="Default" comment="" />
     <ignored path="shuffle.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/routes.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369918068012" ignored="false" />
+    <file path="/routes.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372600835967" ignored="false" />
     <file path="/site.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370097846199" ignored="false" />
     <file path="/category.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365258743317" ignored="false" />
-    <file path="/index.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372335000201" ignored="false" />
+    <file path="/index.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372598636818" ignored="false" />
     <file path="/sites_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369918086370" ignored="false" />
-    <file path="/shuffle.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369918613766" ignored="false" />
+    <file path="/shuffle.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372601039348" ignored="false" />
     <file path="/_shuffle_again.js.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365309801545" ignored="false" />
     <file path="$PROJECT_DIR$/../gtcracker/app/views/posts/index.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365343794287" ignored="false" />
     <file path="$PROJECT_DIR$/../gtcracker/app/assets/stylesheets/posts.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365344029848" ignored="false" />
@@ -18,7 +18,7 @@
     <file path="/home.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365343897747" ignored="false" />
     <file path="$PROJECT_DIR$/../gtcracker/app/views/devise/registrations/new.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365342800251" ignored="false" />
     <file path="/sites.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369919943018" ignored="false" />
-    <file path="/Dummy.txt" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370159447050" ignored="false" />
+    <file path="/Dummy.txt" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372592541812" ignored="false" />
     <file path="/shuffle_again.js.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370064294331" ignored="false" />
     <file path="/_form.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370095457346" ignored="false" />
     <file path="/Gemfile" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1371824970597" ignored="false" />
@@ -28,20 +28,41 @@
     <file path="/_site.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369915276883" ignored="false" />
     <file path="/sites.js" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369920693445" ignored="false" />
     <file path="/show.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1371391916825" ignored="false" />
-    <file path="/microposts_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370144765762" ignored="false" />
+    <file path="/microposts_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372597445195" ignored="false" />
     <file path="/micropost.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370522816048" ignored="false" />
     <file path="/20130601100325_create_microposts.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370130542322" ignored="false" />
-    <file path="/microposts.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370437725927" ignored="false" />
+    <file path="/microposts.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372600684990" ignored="false" />
     <file path="/imgkit.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370521089069" ignored="false" />
     <file path="$PROJECT_DIR$/../soccertime/app/views/player_files/index.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370529620856" ignored="false" />
     <file path="$PROJECT_DIR$/../soccertime/app/assets/stylesheets/player_files.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370531647194" ignored="false" />
     <file path="$PROJECT_DIR$/../soccertime/app/views/layouts/application.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1371392018742" ignored="false" />
-    <file path="/application.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1371392018742" ignored="false" />
+    <file path="/application.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372383242388" ignored="false" />
     <file path="$PROJECT_DIR$/../soccertime/app/views/player_files/show.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1371391941084" ignored="false" />
     <file path="$PROJECT_DIR$/../greissue/app/views/thoughts/_thought.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370573027990" ignored="false" />
     <file path="/_thought.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370570750140" ignored="false" />
     <file path="$PROJECT_DIR$/../soccertime/app/assets/javascripts/replies.js" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1371392156565" ignored="false" />
     <file path="/replies.js" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1371391813328" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/Gemfile" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372382548343" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/assets/stylesheets/scaffolds.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389025842" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/config/routes.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389329745" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/views/tweets/_form.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372383494031" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/views/tweets/index.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389376322" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/views/layouts/application.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372383359626" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/db/schema.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389025842" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/db/migrate/20130628012105_create_tweets.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372383478059" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/assets/stylesheets/tweets.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389221234" ignored="false" />
+    <file path="/tweets.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389209165" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/models/tweet.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372393001268" ignored="false" />
+    <file path="/tweet.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372392821127" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/controllers/tweets_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372391122838" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/db/migrate/20130628022717_devise_create_users.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372386461696" ignored="false" />
+    <file path="/20130628022717_devise_create_users.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372386461696" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/views/devise/registrations/new.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372386622559" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/views/devise/registrations/edit.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372386654796" ignored="false" />
+    <file path="/tweets_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389338907" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/models/user.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372387616355" ignored="false" />
+    <file path="/user.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372387605889" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/views/tweets/index2.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389305601" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,82 +84,46 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="shuffle.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/microposts/shuffle.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="86" selection-start="775" selection-end="775" vertical-scroll-proportion="-12.214286">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="microposts_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/microposts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="13" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+            <state line="113" column="47" selection-start="3091" selection-end="3091" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sites_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sites_controller.rb">
+      <file leaf-file-name="microposts.css.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="12" column="46" selection-start="342" selection-end="342" vertical-scroll-proportion="0.4293629">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/site.rb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="micropost.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/micropost.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="41" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/microposts/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="58" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="28" selection-start="260" selection-end="260" vertical-scroll-proportion="-0.10526316">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imgkit.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/imgkit.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="50" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sites/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="-13.428572">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_site.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sites/_site.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="1" selection-start="158" selection-end="208" vertical-scroll-proportion="0.0">
+            <state line="18" column="33" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -147,7 +132,7 @@
       <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="17" column="29" selection-start="382" selection-end="382" vertical-scroll-proportion="-6.214286">
               <folding />
             </state>
           </provider>
@@ -163,22 +148,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/sites.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/sites/shuffle.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/sites.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/sites.js" />
         <option value="$PROJECT_DIR$/app/views/sites/shuffle_again.js.erb" />
         <option value="$PROJECT_DIR$/app/models/site.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130601100325_create_microposts.rb" />
-        <option value="$PROJECT_DIR$/app/views/microposts/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/microposts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss" />
         <option value="$PROJECT_DIR$/config/initializers/imgkit.rb" />
         <option value="$PROJECT_DIR$/app/models/micropost.rb" />
-        <option value="$PROJECT_DIR$/app/views/microposts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/microposts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sites/index.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/db/migrate/20130601100325_create_microposts.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/microposts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/microposts/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/microposts/_form.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/microposts/shuffle.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss" />
       </list>
     </option>
   </component>
@@ -221,7 +206,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -279,6 +263,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,17 +493,18 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.externalResources" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../greissue" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../quora" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Rails.Development: shuffle">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -610,6 +613,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -639,13 +649,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
@@ -757,6 +760,24 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6a726319-5e89-41f7-b9ec-be118314c5e2" name="Default" comment="" />
@@ -786,14 +807,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6749175" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6749175" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24242425" sideWeight="0.6765677" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25378788" sideWeight="0.6765677" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -866,58 +887,33 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/categories.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="20" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/sites.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/sites/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sites/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/microposts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="58" selection-start="720" selection-end="720" vertical-scroll-proportion="0.0">
+        <state line="25" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/microposts_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130601100325_create_microposts.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+        <state line="3" column="6" selection-start="104" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sites_controller.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="30" column="13" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/site.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/sites/_site.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -926,42 +922,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/micropost.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+        <state line="10" column="47" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/imgkit.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/microposts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="50" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
+        <state line="14" column="120" selection-start="368" selection-end="368" vertical-scroll-proportion="-9.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sites_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="4" selection-start="99" selection-end="140" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/microposts/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="3" selection-start="462" selection-end="462" vertical-scroll-proportion="0.48169014">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="29" selection-start="382" selection-end="382" vertical-scroll-proportion="-6.214286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="33" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/microposts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="99" selection-start="423" selection-end="423" vertical-scroll-proportion="0.5887324">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/microposts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="47" selection-start="3091" selection-end="3091" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sites/_site.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/microposts/shuffle.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="158" selection-end="208" vertical-scroll-proportion="0.0">
+        <state line="18" column="86" selection-start="775" selection-end="775" vertical-scroll-proportion="-12.214286">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sites/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="402" selection-end="402" vertical-scroll-proportion="-13.428572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="260" selection-end="260" vertical-scroll-proportion="-0.10526316">
+        <state line="12" column="46" selection-start="342" selection-end="342" vertical-scroll-proportion="0.4293629">
           <folding />
         </state>
       </provider>

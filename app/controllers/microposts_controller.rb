@@ -72,7 +72,7 @@ class MicropostsController < ApplicationController
 
     respond_to do |format|
       if @micropost.save
-        format.html { redirect_to @micropost, notice: 'Micropost was successfully created.' }
+        format.html { redirect_to microposts_url, notice: 'Micropost was successfully created.' }
         format.json { render json: @micropost, status: :created, location: @micropost }
       else
         format.html { render action: "new" }
@@ -107,5 +107,10 @@ class MicropostsController < ApplicationController
       format.html { redirect_to microposts_url }
       format.json { head :no_content }
     end
+  end
+
+  def shuffle
+
+    @microposts = Micropost.all.shuffle.first(4)
   end
 end

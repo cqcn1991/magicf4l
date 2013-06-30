@@ -1,21 +1,23 @@
-<h1>Listing microposts</h1>
-
 <div class="row">
-  <% @microposts.each do |micropost| %>
-    <div class="span6 micropost">
-       <h5><%= micropost.title %> </h5>
-      <% if micropost.video_id %>
-          <%#= image_tag(micropost.video_thumbnail_url)  %>
-          <iframe  src="http://player.youku.com/embed/<%= micropost.video_id %>" frameborder=0
-                  allowfullscreen></iframe>
+  <div class="span6 offset3">
+    <h1>Listing microposts</h1>
+
+    <div class="list">
+      <% @microposts.each do |micropost| %>
+          <div>
+            <%# if !micropost.video_url.blank? %>
+            <%= link_to micropost.title, micropost.video_url.presence || micropost.article_url%>
+            <%# else %>
+            <%#= link_to micropost.title, micropost.article_url%>
+            <%# end %>
+          </div>
 
       <% end %>
     </div>
 
-
-  <% end %>
-
+  </div>
 </div>
+
 
 
 <table>

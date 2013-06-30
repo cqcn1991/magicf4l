@@ -5,3 +5,28 @@ iframe {
   width: 460px;
   height: 400px;
 }
+
+.micropost {
+  margin-bottom: 20px;
+  position: relative;
+  &:hover {
+   background:  none repeat scroll 0 0 #F6F5F4
+  }
+
+  .cover{
+    float: left;
+    //margin-right: 10px;
+  }
+  h5 {
+    margin: 0;
+  }
+  .cover-linkable{
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1
+  }
+}
