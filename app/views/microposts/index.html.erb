@@ -1,53 +1,15 @@
-<div class="row">
-  <div class="span6 offset3">
-    <h1>Listing microposts</h1>
+
 
     <div class="list">
       <% @microposts.each do |micropost| %>
           <div>
-            <%# if !micropost.video_url.blank? %>
-            <%= link_to micropost.title, micropost.video_url.presence || micropost.article_url%>
-            <%# else %>
-            <%#= link_to micropost.title, micropost.article_url%>
-            <%# end %>
+              <%= link_to micropost.title, micropost.video_url.presence || micropost.article_url%>
+              <%= link_to 'Destroy', micropost, method: :delete, data: { confirm: 'Are you sure?' }, class: "pull-right" %>
           </div>
 
       <% end %>
     </div>
 
-  </div>
-</div>
 
-
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Content</th>
-    <th>video_Url</th>
-    <th>video_ID</th>
-    <th>article_Url</th>
-    <th>User</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @microposts.each do |micropost| %>
-  <tr>
-    <td><%= micropost.title %></td>
-    <td><%= micropost.content %></td>
-    <td><%= micropost.video_url %></td>
-    <td><%= micropost.video_id %></td>
-    <td><%= micropost.article_url %></td>
-    <td><%= micropost.user_id %></td>
-    <td><%= link_to 'Show', micropost %></td>
-    <td><%= link_to 'Edit', edit_micropost_path(micropost) %></td>
-    <td><%= link_to 'Destroy', micropost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
 
 <%= link_to 'New Micropost', new_micropost_path %>

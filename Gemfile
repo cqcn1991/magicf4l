@@ -15,6 +15,9 @@ gem 'carrierwave'
 #gem 'wkhtmltopdf-heroku'
 gem 'newrelic_rpm'
 
+gem 'omniauth-twitter'
+gem 'omniauth-weibo-oauth2'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

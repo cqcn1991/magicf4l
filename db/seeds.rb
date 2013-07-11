@@ -6,11 +6,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-puts 'DEFAULT Categories'
-categories = Category.create([{name:'国内商业网站'},{name:'Ruby 社区网站'}, {name: 'Ruby 开源项目'} ])
-if categories.all?(&:save)
-  puts "categories saved"
-else
-  puts "categories saved failed"
-end
+#
+#puts 'DEFAULT Categories'
+#categories = Category.create([{name:'国内商业网站'},{name:'Ruby 社区网站'}, {name: 'Ruby 开源项目'} ])
+#if categories.all?(&:save)
+#  puts "categories saved"
+#else
+#  puts "categories saved failed"
+#end

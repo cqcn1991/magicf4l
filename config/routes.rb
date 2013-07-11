@@ -1,7 +1,10 @@
 Shuffle::Application.routes.draw do
+  devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
+
   resources :microposts  do
     collection do
       get :shuffle
+      get :admin_panel
     end
   end
 

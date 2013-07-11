@@ -1,9 +1,21 @@
 // Place all the styles related to the microposts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.header {
+  .cover-title{
+    //font-size: 32px;
+    line-height: 1;
+    margin-bottom: 10px;
+    //text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    font-weight: 700;
+  }
+  margin-bottom: 10px;
+}
+
 iframe {
-  width: 460px;
-  height: 400px;
+  width: 100%;
+
 }
 
 .micropost {

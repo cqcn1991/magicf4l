@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shuffle</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="row">
+    <div class="">
+      <%= render "layouts/header" %>
+      <!--alert messages-->
+      <% flash.each do |key, value| %>
+          <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+      <% end %>
+
+
+      <table>
+        <tr>
+          <th>Title</th>
+          <th>Content</th>
+          <th>video_Url</th>
+          <th>video_ID</th>
+          <th>article_Url</th>
+          <th>User</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+
+        <% @microposts.each do |micropost| %>
+            <tr>
+              <td><%= micropost.title %></td>
+              <td><%= micropost.content %></td>
+              <td><%= micropost.video_url %></td>
+              <td><%= micropost.video_id %></td>
+              <td><%= micropost.article_url %></td>
+              <td><%= micropost.user_id %></td>
+              <td><%= link_to 'Show', micropost %></td>
+              <td><%= link_to 'Edit', edit_micropost_path(micropost) %></td>
+              <td><%= link_to 'Destroy', micropost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+        <% end %>
+      </table>
+
+      <br />
+      <%= render "layouts/nav" %>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
+

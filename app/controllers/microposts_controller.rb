@@ -70,6 +70,7 @@ class MicropostsController < ApplicationController
       end
     end
 
+    @micropost.user=current_user
     respond_to do |format|
       if @micropost.save
         format.html { redirect_to microposts_url, notice: 'Micropost was successfully created.' }
@@ -110,7 +111,13 @@ class MicropostsController < ApplicationController
   end
 
   def shuffle
-
+    @micropost=Micropost.offset(rand(Micropost.count)).first
     @microposts = Micropost.all.shuffle.first(4)
+  end
+
+
+  def admin_panel
+    @microposts = Micropost.all
+    render :layout => false
   end
 end

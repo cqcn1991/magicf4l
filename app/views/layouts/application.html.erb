@@ -5,18 +5,27 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta property="wb:webmaster" content="76037d06a69a83b8" />
 </head>
 <body>
 
 <div class="container">
+
+  <div class="row">
+    <div class="span6 offset3">
+  <%= render "layouts/header" %>
   <!--alert messages-->
   <% flash.each do |key, value| %>
       <%= content_tag(:div, value, class: "alert alert-#{key}") %>
   <% end %>
 
   <%= yield %>
+  <%= render "layouts/footer" %>
 
+   </div>
 </div>
+</div>
+
 
 </body>
 </html>

@@ -1,0 +1,10 @@
+name: "MagicShuffle"
+email: "MagicShuffle@example.com"
+password: "MagicShuffle"
+password_confirmation: "MagicShuffle"
+
+twitter_consumer_key: "4xP4Mo8bJT3KRgIGeUzA"
+twitter_consumer_secret: "4xrHalpZ8ud0fcbTvJcN3FC3z1GP8F2PlGu6uGxVE"
+
+weibo_key: "3622188496"
+weibo_secret: "e027ecf6d2ff44d7471f1d375d667c30"
