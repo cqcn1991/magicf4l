@@ -120,4 +120,10 @@ class MicropostsController < ApplicationController
     @microposts = Micropost.all
     render :layout => false
   end
+
+  def index2
+    @micropost=Micropost.offset(rand(Micropost.count)).first
+    @microposts = Micropost.all.shuffle.first(3)
+    render :layout => false
+  end
 end

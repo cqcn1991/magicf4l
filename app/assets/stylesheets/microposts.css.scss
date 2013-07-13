@@ -15,14 +15,17 @@
 
 iframe {
   width: 100%;
-
+  height: 400px;
+  margin-bottom: 20px;
 }
+
 
 .micropost {
   margin-bottom: 20px;
   position: relative;
+  //background:  none repeat scroll 0 0 #F6F5F4;
   &:hover {
-   background:  none repeat scroll 0 0 #F6F5F4
+    background:  none repeat scroll 0 0 #F6F5F4;
   }
 
   .cover{

@@ -1,7 +1,5 @@
 class Micropost < ActiveRecord::Base
-  #include HTTParty
-  #base_uri "https://openapi.youku.com/v2/videos/show.json"
-  #after_create :take_snapshot
+
   attr_accessible :content, :title, :video_url, :article_url, :user_id, :video_thumbnail_url
   belongs_to :user
   mount_uploader :snapshot, SnapshotUploader
@@ -17,6 +15,13 @@ class Micropost < ActiveRecord::Base
 
       video_id
     end
+  end
+
+  def logo
+    response = HTTParty.get("http://v.youku.com/player/getPlayList/VideoIDS/#{self.video_id}/timezone/+08/version/5/source/out?password=&ran=2513&n=3")
+    decode_response =  ActiveSupport::JSON.decode(response)
+
+    decode_response['data'][0]['logo']
   end
 
 

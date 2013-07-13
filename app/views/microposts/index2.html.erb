@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shuffle</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta property="wb:webmaster" content="76037d06a69a83b8" />
+</head>
+<body>
+
+<div class="container">
+
+  <div class="row">
+    <!--<div class="span6 offset3">-->
+    <div class="span12">
+      <%= render "layouts/header" %>
+      <!--alert messages-->
+      <% flash.each do |key, value| %>
+          <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+      <% end %>
+    </div>
+
+
+
+    <div class="cover-micropost span12">
+      <iframe src="http://player.youku.com/embed/<%= @micropost.video_id %>" frameborder=0
+              allowfullscreen></iframe>
+    </div>
+    <div class="microposts">
+
+        <% @microposts.each do |micropost| %>
+            <div class="micropost span4">
+              <%# if micropost.video_id %>
+              <div class="row ">
+                <div class="cover span2">
+                  <% if micropost.video_id %>
+                      <%= image_tag(micropost.video_thumbnail_url)  %>
+                  <% else %>
+                      <%= image_tag("http://img.bitpixels.com/getthumbnail?code=72621&size=200&url=#{micropost.article_url}") %>
+                  <% end %>
+                </div>
+                <div class="info span2">
+                  <h6><%= micropost.title %> </h6>
+                  <%#= simple_format micropost.content %>
+                </div>
+              </div>
+              <a href="<%= micropost.video_url %>" target="_blank">
+                <div class="cover-linkable"></div>
+              </a>
+
+              <!--<iframe  src="http://player.youku.com/embed/<%#= micropost.video_id %>" frameborder=0-->
+              <!--allowfullscreen></iframe>-->
+
+              <%# end %>
+            </div>
+
+
+        <% end %>
+
+      </div>
+
+
+      <div class="span12">
+        <%= render "layouts/footer" %>
+      </div>
+
+
+    </div>
+  </div>
+<!--</div>-->
+
+
+</body>
+</html>

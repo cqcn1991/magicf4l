@@ -5,8 +5,11 @@ Shuffle::Application.routes.draw do
     collection do
       get :shuffle
       get :admin_panel
+      get :index2
     end
   end
+
+  resources :users, only: [:show]
 
   resources :categories
 
