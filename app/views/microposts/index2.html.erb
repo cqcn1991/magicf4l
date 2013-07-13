@@ -24,9 +24,15 @@
 
 
     <div class="cover-micropost span12">
-      <iframe src="http://player.youku.com/embed/<%= @micropost.video_id %>" frameborder=0
-              allowfullscreen></iframe>
+      <!--<iframe src="http://player.youku.com/embed/<%#= @micropost.video_id %>" frameborder=0-->
+              <!--allowfullscreen></iframe>-->
+      <embed src="http://player.youku.com/player.php/sid/<%= @micropost.video_id %>/v.swf"
+             allowFullScreen="true" quality="high"  align="middle"
+             allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
     </div>
+
+
+
     <div class="microposts">
 
         <% @microposts.each do |micropost| %>
@@ -54,8 +60,6 @@
 
               <%# end %>
             </div>
-
-
         <% end %>
 
       </div>
