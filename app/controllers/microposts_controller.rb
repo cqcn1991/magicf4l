@@ -55,20 +55,13 @@ class MicropostsController < ApplicationController
   def create
     @micropost = Micropost.new(params[:micropost])
     if   @micropost.video_url or  @micropost.article_url
-
       if !@micropost.video_url.empty?
         url = @micropost.video_url
       elsif !@micropost.article_url.empty?
         url = @micropost.article_url
       end
-      doc = Nokogiri::HTML(open(url))
-      @micropost.title = doc.css("title").text.delete("—在线播放—优酷网，视频高清在线观看")
-
-      if !@micropost.video_url.empty?
-        video_thumbnail_url =  doc.css("a#s_qq_haoyou")[0]['href']
-        video_thumbnail_url =  video_thumbnail_url.split("pics=")[1]
-        @micropost.video_thumbnail_url = video_thumbnail_url.split("&site=")[0]
-      end
+      #doc = Nokogiri::HTML(open(url))
+      #@micropost.title = doc.css("title").text.delete("—在线播放—优酷网，视频高清在线观看")
     end
 
     @micropost.user=current_user
@@ -135,6 +128,21 @@ class MicropostsController < ApplicationController
 
   def shuffle_again
     @microposts = Micropost.all.shuffle.first(3)
+  end
+
+  def like
+    if  params[:type] == "like"
+      value =1
+    elsif params[:type] == "unlike"
+      value =0
+    end
+    #value = params[:type] == "up" ? 1 : -1
+    @micropost = Micropost.find(params[:id])
+    @micropost.add_or_update_evaluation(:likes, value, current_user)
+    respond_to do |format|
+      format.html { redirect_to :back, notice: "Thank you for voting!"}
+      format.js
+    end
   end
 
 end

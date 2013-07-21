@@ -9,6 +9,8 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :provider, :uid, :image
 
+  has_many :evaluations, class_name: "ReputationSystem::Evaluation", as: :source
+
   validates :name, presence: true
   # attr_accessible :title, :body
 
@@ -52,5 +54,9 @@ class User < ActiveRecord::Base
     end
   end
 
+  def like_for?(item)
+   eval = evaluations.where(target_type: item.class, target_id: item.id).first
+   eval.present? && eval.value > 0 ? true : false
+  end
 
 end

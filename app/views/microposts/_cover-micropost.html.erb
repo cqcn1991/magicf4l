@@ -1,18 +1,29 @@
 <div class="cover-micropost span12">
   <% if @micropost %>
       <h6 class="cover-micropost-title"><%= @micropost.title %></h6 >
-  <% end %>
-  <div class="icons">
-    <i class="icon-heart icon-2x"></i>
-    <i class="icon-heart icon-heart-red icon-2x"></i>
-    <i class="icon-random icon-2x"></i>
 
+  <div class="icons pull-right">
+    <!--<i class="icon-random icon-2x"></i>-->
+
+    <!--<%# if current_user && current_user.like_for?(@micropost) %>-->
+        <!--<%#= link_to(like_micropost_path(@micropost, type: "unlike"), method: "post", class: "like on") do   %>-->
+            <!--<i class="icon-heart icon-heart-red icon-2x"></i>-->
+        <!--<%# end %>-->
+    <!--<%# else %>-->
+        <!--<%#= link_to(like_micropost_path(@micropost, type: "like"), method: "post", class: "like")  do  %>-->
+            <!--<i class="icon-heart icon-2x"></i>-->
+        <!--<%# end %>-->
+    <!--<%# end %>-->
+
+    <%#= @micropost.reputation_for(:likes).to_i %>
     <%= link_to(shuffle_again_microposts_path, remote: true) do %>
-        <i class="icon-refresh icon-spin"></i>
+        <!--<i class="icon-refresh icon-spin"></i>-->
+        <i class="icon-random"></i>
     <% end %>
   </div>
 
     <embed src="http://player.youku.com/player.php/sid/<%= @micropost.video_id %>/v.swf"
          allowFullScreen="true" quality="high"  align="middle"
          allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+  <% end %>
 </div>

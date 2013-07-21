@@ -8,6 +8,9 @@ Shuffle::Application.routes.draw do
       get :admin_panel
       get :index2
     end
+    member do
+      post :like
+    end
   end
 
   resources :users, only: [:show]
