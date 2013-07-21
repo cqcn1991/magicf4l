@@ -1,0 +1,5 @@
+$('.microposts').fadeOut('slow', function() {
+    var div = $('<%= j render('microposts') %>').hide();
+    $('.microposts').replaceWith(div);
+    $('.microposts').fadeIn('slow');
+});

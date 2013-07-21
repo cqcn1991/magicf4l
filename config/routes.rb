@@ -4,6 +4,7 @@ Shuffle::Application.routes.draw do
   resources :microposts  do
     collection do
       get :shuffle
+      get :shuffle_again
       get :admin_panel
       get :index2
     end

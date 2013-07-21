@@ -30,6 +30,7 @@ class MicropostsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @micropost }
+      format.js
     end
   end
 
@@ -111,8 +112,9 @@ class MicropostsController < ApplicationController
   end
 
   def shuffle
-    @micropost=Micropost.offset(rand(Micropost.count)).first
-    @microposts = Micropost.all.shuffle.first(4)
+    @all_microposts =  Micropost.all.shuffle.first(4)
+    @micropost=@all_microposts.first
+    @microposts = @all_microposts[1..3]
   end
 
 
@@ -125,5 +127,14 @@ class MicropostsController < ApplicationController
     @micropost=Micropost.offset(rand(Micropost.count)).first
     @microposts = Micropost.all.shuffle.first(3)
     render :layout => false
+    #respond_to do |format|
+    #  format.html # index.html.erb
+    #  format.js
+    #end
   end
+
+  def shuffle_again
+    @microposts = Micropost.all.shuffle.first(3)
+  end
+
 end

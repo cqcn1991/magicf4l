@@ -12,18 +12,28 @@
 <div class="container">
 
   <div class="row">
-    <div class="span6 offset3">
-  <%= render "layouts/header" %>
-  <!--alert messages-->
-  <% flash.each do |key, value| %>
-      <%= content_tag(:div, value, class: "alert alert-#{key}") %>
-  <% end %>
 
-  <%= yield %>
-  <%= render "layouts/footer" %>
+        <div class="span12">
+        <%= render "layouts/header" %>
+        <!--alert messages-->
+        <% flash.each do |key, value| %>
+            <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+        <% end %>
+
+        </div>
+
+
+
+        <div class="span12">
+          <%= yield %>
+        </div>
+
+
+        <div class="span12">
+          <%= render "layouts/footer" %>
+        </div>
 
    </div>
-</div>
 </div>
 
 

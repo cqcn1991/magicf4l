@@ -1,16 +1,36 @@
 
+<div class="row all-posts">
+  <div class="cover-micropost span12">
+    <!--<iframe src="http://player.youku.com/embed/<%#= @micropost.video_id %>" frameborder=0-->
+    <!--allowfullscreen></iframe>-->
+    <% if @micropost %>
+        <h6 class="cover-micropost-title"><%= @micropost.title %></h6 >
+    <% end %>
+    <div class="icons">
+      <i class="icon-heart icon-2x"></i>
+      <i class="icon-heart icon-heart-red icon-2x"></i>
+      <i class="icon-random icon-2x"></i>
 
-    <div class="microposts">
-          <div class="cover-micropost">
-            <iframe height=300 width=300 src="http://player.youku.com/embed/<%= @micropost.video_id %>" frameborder=0
-                    allowfullscreen></iframe>
-          </div>
+      <%= link_to(shuffle_again_microposts_path, remote: true) do %>
+          <i class="icon-refresh icon-spin"></i>
+      <% end %>
+    </div>
 
 
+    <embed src="http://player.youku.com/player.php/sid/<%= @micropost.video_id %>/v.swf"
+           allowFullScreen="true" quality="high"  align="middle"
+           allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+  </div>
+
+
+
+  <div class="microposts span12">
+    <div class="row">
       <% @microposts.each do |micropost| %>
-          <div class="micropost">
-            <%# if micropost.video_id %>
-            <div class="row">
+          <%= link_to( micropost, remote: true) do %>
+
+          <div class="micropost span4">
+            <div class="row ">
               <div class="cover span2">
                 <% if micropost.video_id %>
                     <%= image_tag(micropost.video_thumbnail_url)  %>
@@ -18,24 +38,21 @@
                     <%= image_tag("http://img.bitpixels.com/getthumbnail?code=72621&size=200&url=#{micropost.article_url}") %>
                 <% end %>
               </div>
-              <div class="info span4">
-                <h5><%= micropost.title %> </h5>
-                <%= simple_format micropost.content %>
+              <div class="info span2">
+                <h6><%= micropost.title %> </h6>
               </div>
             </div>
-            <a href="<%= micropost.video_url %>" target="_blank">
-              <div class="cover-linkable"></div>
-            </a>
+            <!--<a href="<%#= micropost.video_url %>" target="_blank">-->
+            <!--<div class="cover-linkable"></div>-->
+            <!--</a>-->
 
-            <!--<iframe  src="http://player.youku.com/embed/<%#= micropost.video_id %>" frameborder=0-->
-            <!--allowfullscreen></iframe>-->
-
-            <%# end %>
+           <% end %>
           </div>
-
-
       <% end %>
-
     </div>
 
 
+
+  </div>
+
+</div>

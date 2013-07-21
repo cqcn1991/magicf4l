@@ -17,6 +17,7 @@ gem 'newrelic_rpm'
 
 gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'
+gem 'jquery-ui-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
