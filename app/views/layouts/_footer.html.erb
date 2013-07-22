@@ -1,15 +1,21 @@
 <div class="footer">
+  <%= link_to "Shuffle", shuffle_microposts_path %>
+  <%= link_to "List", microposts_path %>
   <% if user_signed_in? %>
-      <%= current_user.name %>
-      <%= link_to "Profile", edit_user_registration_path %>
-      <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
-  <% else %>
-      <%= link_to 'Sign up', new_user_registration_path %>
-      <%= link_to 'Sign in',new_user_session_path %>
-      <!--<li><%#= link_to 'Sign in Twitter',user_omniauth_authorize_path(:twitter) %></li>-->
-      <!--<li><%#= link_to 'Sign in Weibo',user_omniauth_authorize_path(:weibo) %></li>-->
+    <%= link_to "New", new_micropost_path %>
   <% end %>
+  <div class="pull-right">
+    <% if user_signed_in? %>
+        <%= current_user.name %>
+        <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
 
-  <%= link_to 'Admin', admin_panel_microposts_path %>
+    <% else %>
+        <%= link_to 'Sign in',new_user_session_path %>
+        <%= link_to 'Weibo',user_omniauth_authorize_path(:weibo) %>
+    <% end %>
+
+    <%#= link_to 'Admin', admin_panel_microposts_path %>
+  </div>
+
 </div>
 

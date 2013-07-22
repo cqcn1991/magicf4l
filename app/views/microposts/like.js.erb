@@ -1,0 +1,6 @@
+var like_icon= $('#<%=dom_id(@micropost)%>').find('.icon-heart');
+var like_link= $('#<%=dom_id(@micropost)%>').find('.like');
+$(like_icon).toggleClass('icon-heart-red');
+$(like_link).each(function(){
+    this.href = this.href.indexOf('type=unlike') != -1 ? this.href.replace('type=unlike', 'type=like') : this.href.replace('type=like', 'type=unlike');
+});

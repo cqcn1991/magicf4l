@@ -1,26 +1,35 @@
-<div class="cover-micropost span12">
+<div class="cover-micropost span12" id=<%= dom_id(@micropost)%> >
   <% if @micropost %>
-      <h6 class="cover-micropost-title"><%= @micropost.title %></h6 >
+      <div class="icons pull-right">
+        <!--<i class="icon-random icon-2x"></i>-->
+        <% if !current_user %>
+            <%= link_to(like_micropost_path(@micropost, type: "like"), method: "post", class: "like")  do  %>
+                <i class="icon-heart icon-2x"></i>
+            <% end %>
+        <% else %>
 
-  <div class="icons pull-right">
-    <!--<i class="icon-random icon-2x"></i>-->
+            <% if current_user && current_user.like_for?(@micropost) %>
+                <%= link_to(like_micropost_path(@micropost, type: "unlike"), method: "post", class: "like on", remote: true) do  %>
+                    <i class="icon-heart icon-heart-red icon-2x"></i>
+                <% end %>
+            <% else %>
+                <%= link_to(like_micropost_path(@micropost, type: "like"), method: "post", class: "like", remote: true)  do  %>
+                    <i class="icon-heart icon-2x"></i>
+                <% end %>
+            <% end %>
+        <% end %>
+        <%#= @micropost.reputation_for(:likes).to_i %>
+        <%= link_to(shuffle_again_microposts_path, remote: true) do %>
+            <!--<i class="icon-refresh icon-spin"></i>-->
+            <i class="icon-random icon-2x"></i>
+        <% end %>
+      </div>
+      <div class="title">
+        <h4 class="cover-micropost-title"><%= @micropost.title %></h4>
+      </div>
 
-    <!--<%# if current_user && current_user.like_for?(@micropost) %>-->
-        <!--<%#= link_to(like_micropost_path(@micropost, type: "unlike"), method: "post", class: "like on") do   %>-->
-            <!--<i class="icon-heart icon-heart-red icon-2x"></i>-->
-        <!--<%# end %>-->
-    <!--<%# else %>-->
-        <!--<%#= link_to(like_micropost_path(@micropost, type: "like"), method: "post", class: "like")  do  %>-->
-            <!--<i class="icon-heart icon-2x"></i>-->
-        <!--<%# end %>-->
-    <!--<%# end %>-->
 
-    <%#= @micropost.reputation_for(:likes).to_i %>
-    <%= link_to(shuffle_again_microposts_path, remote: true) do %>
-        <!--<i class="icon-refresh icon-spin"></i>-->
-        <i class="icon-random"></i>
-    <% end %>
-  </div>
+
 
     <embed src="http://player.youku.com/player.php/sid/<%= @micropost.video_id %>/v.swf"
          allowFullScreen="true" quality="high"  align="middle"

@@ -19,6 +19,7 @@ gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'
 gem 'jquery-ui-rails'
 gem 'activerecord-reputation-system'
+gem 'cancan'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

@@ -4,7 +4,12 @@
       <% @microposts.each do |micropost| %>
           <div>
               <%= link_to micropost.title, micropost.video_url.presence || micropost.article_url%>
+            <div class="pull-right">
               <%= link_to 'Destroy', micropost, method: :delete, data: { confirm: 'Are you sure?' }, class: "pull-right" %>
+              <i class="icon-heart"></i>
+              <%= micropost.reputation_for(:likes).to_i %>
+            </div>
+
           </div>
 
       <% end %>

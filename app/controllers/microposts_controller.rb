@@ -1,5 +1,6 @@
 # encoding: utf-8
 class MicropostsController < ApplicationController
+  before_filter :authenticate_user!, only: [:like, :destroy]
   require 'nokogiri'
   require 'open-uri'
   # GET /microposts

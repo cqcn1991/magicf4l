@@ -13,17 +13,22 @@
                   <% end %>
                 </div>
                 <div class="info span2">
+
                   <h6><%= micropost.title %> </h6>
-                    <!--<i class="icon-heart"></i>-->
-                  <%#= micropost.reputation_for(:likes).to_i %>
+                  <div class="like">
+                    <% if current_user && current_user.like_for?(micropost) %>
+                            <i class="icon-heart icon-heart-red"></i>
+                    <% else %>
+                            <i class="icon-heart"></i>
+                    <% end %>
+                    <%= micropost.reputation_for(:likes).to_i %>
+                  </div>
                 </div>
               </div>
-              <!--<a href="<%#= micropost.video_url %>" target="_blank">-->
-              <!--<div class="cover-linkable"></div>-->
-              <!--</a>-->
 
+            </div>
         <% end %>
-        </div>
+
     <% end %>
   </div>
 </div>
