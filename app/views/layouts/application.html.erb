@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>just4Magic</title>
+  <title>just4Magic - Discover Great Magic </title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -9,33 +9,34 @@
 </head>
 <body>
 
-<div class="container">
+
 
   <div class="row">
 
-        <div class="span12">
 
-        <!--alert messages-->
-        <% flash.each do |key, value| %>
-            <%= content_tag(:div, value, class: "alert alert-#{key}") %>
-        <% end %>
-
-        </div>
-
-
-
-        <div class="span12">
-          <%= yield %>
-        </div>
-
-
-        <div class="span12">
           <%= render "layouts/footer" %>
-          <%= render "layouts/header" %>
-        </div>
+        <!--alert messages-->
+
+
+
+ <div class="main-wrapper">
+       <div class="container">
+
+         <div class="span12">
+           <%= yield %>
+         </div>
+   </div>
+ </div>
+   <div class="container">
+     <div class="span12">
+       <%= render "layouts/header" %>
+     </div>
+   </div>
+
+
 
    </div>
-</div>
+
 
 
 </body>

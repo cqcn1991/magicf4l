@@ -1,21 +1,36 @@
-<div class="footer">
-  <%= link_to "Shuffle", shuffle_microposts_path %>
-  <%= link_to "List", microposts_path %>
-  <% if user_signed_in? %>
-    <%= link_to "New", new_micropost_path %>
-  <% end %>
-  <div class="pull-right">
-    <% if user_signed_in? %>
-        <%= current_user.name %>
-        <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
 
-    <% else %>
-        <%= link_to 'Sign in',new_user_session_path %>
-        <%= link_to 'Weibo',user_omniauth_authorize_path(:weibo) %>
-    <% end %>
+<div class="footer-wrapper">
+  <div class="container">
+    <div class="footer span12">
+      <div class="menu">
+        <%= link_to "Shuffle", shuffle_microposts_path %>
+        <%= link_to "List", microposts_path %>
+        <% if user_signed_in? %>
+            <%= link_to "New", new_micropost_path %>
+        <% end %>
+      </div>
 
-    <%#= link_to 'Admin', admin_panel_microposts_path %>
+
+      <div class="sign-in pull-right">
+        <% if user_signed_in? %>
+         <span>  <%= current_user.name %>   </span>
+            <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+
+        <% else %>
+            <%#= link_to 'Sign in',new_user_session_path %>
+
+            <%= link_to 'Weibo',user_omniauth_authorize_path(:weibo) %>
+        <% end %>
+
+        <%#= link_to 'Admin', admin_panel_microposts_path %>
+      </div>
+      <% flash.each do |key, value| %>
+          <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+      <% end %>
+
+    </div>
+
   </div>
-
 </div>
+
 
