@@ -32,11 +32,12 @@
       </div>
 
 
+      <embed src="<%= asset_path('youku.swf') %>?showAd=0&VideoIDS=<%= @micropost.video_id %>"
+             allowFullScreen="true" quality="high"  align="middle"
+             allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 
-
-
-    <embed src="http://player.youku.com/player.php/sid/<%= @micropost.video_id %>/v.swf"
-         allowFullScreen="true" quality="high"  align="middle"
-         allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+    <!--<embed src="http://player.youku.com/player.php/sid/<%#= @micropost.video_id %>/v.swf"-->
+         <!--allowFullScreen="true" quality="high"  align="middle"-->
+         <!--allowScriptAccess="always" type="application/x-shockwave-flash"></embed>-->
   <% end %>
 </div>

@@ -11,6 +11,7 @@ class MicropostsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @microposts }
+      format.csv { render text: Micropost.to_csv  }
     end
   end
 

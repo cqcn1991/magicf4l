@@ -5,7 +5,9 @@ class Micropost < ActiveRecord::Base
   #mount_uploader :snapshot, SnapshotUploader
   has_reputation :likes, source: :user, aggregated_by: :sum
   #validates_presence_of :title
-  before_save :get_thumbnail, :get_video_id, on: :create
+  before_validation :get_thumbnail, :get_video_id, on: :create
+
+  validates_uniqueness_of :video_id
 
   def get_thumbnail
     url = self.video_url
@@ -56,5 +58,14 @@ class Micropost < ActiveRecord::Base
   #                            :video_id => { "Authorization" => "THISISMYAPIKEYNOREALLY"})
   #end
 
+  def self.to_csv
+    CSV.generate do |csv|
+      sub_column_names = ['id', 'video_url', 'video_id', 'content']
+      csv << sub_column_names
+      all.each do |product|
+        csv << product.attributes.values_at(*sub_column_names)
+      end
+    end
+  end
 
 end
