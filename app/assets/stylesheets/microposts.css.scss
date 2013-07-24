@@ -81,8 +81,8 @@
 
 .title {
   margin-top: 5px;
-  height: 30px;
-  overflow: hidden;
+  //height: 30px;
+  //overflow: hidden;
   width: 100%;
   .cover-micropost-title {
     font-weight: bolder;
@@ -113,10 +113,10 @@
 
 
 .micropost {
-  margin-bottom: 20px;
   position: relative;
   background:  none repeat scroll 0 0 #FFFFFF;
-  height: 96px;
+  overflow-y: hidden;
+  height: 95px;
   //&:hover {
   //  background:  none repeat scroll 0 0 #F6F5F4;
   //}
@@ -127,6 +127,7 @@
   }
   .info {
     margin-left: 5px;
+
     .like {
       position:absolute;
       right:10px;
