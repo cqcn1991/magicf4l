@@ -12,4 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require imagesloaded.pkgd
+//= require masonry.pkgd
 //= require_tree .
+
+

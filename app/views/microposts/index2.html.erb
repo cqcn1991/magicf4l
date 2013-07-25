@@ -1,5 +1,5 @@
 <div class="microposts">
-  <div class="row js-masonry">
+  <div class="row" id="microposts-list">
     <% @microposts.each do |micropost| %>
         <%= link_to micropost do %>
         <%#= link_to micropost.video_url, :target => "_blank" do %>
