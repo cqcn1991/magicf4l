@@ -19,15 +19,7 @@ class MicropostsController < ApplicationController
   # GET /microposts/1.json
   def show
     @micropost = Micropost.find(params[:id])
-    if !@micropost.video_url.empty?
-      @video_id=@micropost.video_url.split("id_")[1]
-      ampersandPosition = @video_id.index("?f=")
-      if ampersandPosition
-        @video_id = @video_id[0..ampersandPosition-1]
-      end
-      @video_id= @video_id.delete(".html")
-    end
-
+    @microposts =  Micropost.all.shuffle.first(3)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -69,7 +61,7 @@ class MicropostsController < ApplicationController
     @micropost.user=current_user
     respond_to do |format|
       if @micropost.save
-        format.html { redirect_to microposts_url, notice: 'Micropost was successfully created.' }
+        format.html { redirect_to index2_microposts_url, notice: 'Micropost was successfully created.' }
         format.json { render json: @micropost, status: :created, location: @micropost }
       else
         format.html { render action: "new" }
@@ -119,9 +111,7 @@ class MicropostsController < ApplicationController
   end
 
   def index2
-    @micropost=Micropost.offset(rand(Micropost.count)).first
-    @microposts = Micropost.all.shuffle.first(3)
-    render :layout => false
+    @microposts = Micropost.order("created_at DESC").first(20)
     #respond_to do |format|
     #  format.html # index.html.erb
     #  format.js

@@ -9,6 +9,7 @@ class Micropost < ActiveRecord::Base
 
   validates_uniqueness_of :video_id
 
+
   def get_thumbnail
     url = self.video_url
     doc = Nokogiri::HTML(open(url))

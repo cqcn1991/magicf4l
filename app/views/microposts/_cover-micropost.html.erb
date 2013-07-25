@@ -1,3 +1,5 @@
+<% auto_play = false if local_assigns[:auto_play].nil? %>
+
 <div class="cover-micropost span12" id=<%= dom_id(@micropost)%> >
   <% if @micropost %>
       <div class="cover-head-wrapper">
@@ -31,10 +33,16 @@
 
       </div>
 
-
+      <% if auto_play %>
+      <embed src="<%= asset_path('youku.swf') %>?showAd=0&VideoIDS=<%= @micropost.video_id %>&isAutoPlay=true"
+             allowFullScreen="true" quality="high"  align="middle"
+             allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+      <% else %>
       <embed src="<%= asset_path('youku.swf') %>?showAd=0&VideoIDS=<%= @micropost.video_id %>"
              allowFullScreen="true" quality="high"  align="middle"
              allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+      <% end %>
+
 
     <!--<embed src="http://player.youku.com/player.php/sid/<%#= @micropost.video_id %>/v.swf"-->
          <!--allowFullScreen="true" quality="high"  align="middle"-->

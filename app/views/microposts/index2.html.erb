@@ -1,50 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Shuffle</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  <meta property="wb:webmaster" content="76037d06a69a83b8" />
-</head>
-<body>
+<div class="microposts">
+  <div class="row js-masonry">
+    <% @microposts.each do |micropost| %>
+        <%= link_to micropost do %>
+        <%#= link_to micropost.video_url, :target => "_blank" do %>
 
-<div class="container">
+            <div class="micropost-big span4">
 
-  <div class="row">
-    <!--<div class="span6 offset3">-->
-    <div class="span12">
-      <%= render "layouts/header" %>
-      <!--alert messages-->
-      <% flash.each do |key, value| %>
-          <%= content_tag(:div, value, class: "alert alert-#{key}") %>
-      <% end %>
-      <h6 class="cover-micropost-title"><%= @micropost.title %></h6 >
-      <div class="icons">
-        <i class="icon-heart icon-2x"></i>
-        <i class="icon-heart icon-heart-red icon-2x"></i>
-        <i class="icon-random icon-2x"></i>
-        <i class="icon-refresh icon-2x"></i>
-        <%= link_to "shuffle again", shuffle_again_microposts_path, remote: true %>
-      </div>
+                        <%= image_tag(micropost.video_logo_url)  %>
 
-    </div>
+                <div class="info">
+                  <h5><%= micropost.title %> </h5>
 
+                  <div class="like">
+                    <% if current_user && current_user.like_for?(micropost) %>
+                        <i class="icon-heart icon-heart-red"></i>
+                    <% else %>
+                        <i class="icon-heart"></i>
+                    <% end %>
+                    <%= micropost.reputation_for(:likes).to_i %>
+                  </div>
+                </div>
+              </div>
+        <% end %>
 
-
-
-
-
-
-      <div class="span12">
-        <%= render "layouts/footer" %>
-      </div>
-
-
-    </div>
+    <% end %>
   </div>
-<!--</div>-->
-
-
-</body>
-</html>
+</div>

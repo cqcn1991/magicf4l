@@ -1,48 +1,6 @@
-<p id="notice"><%= notice %></p>
+<div class="row all-posts">
+  <%= render('cover-micropost') %>
 
+  <%= render('microposts/microposts') %>
 
-
-<% if @video_id %>
-    <iframe height=300 width=300 src="http://player.youku.com/embed/<%= @video_id %>" frameborder=0
-        allowfullscreen></iframe>
-    <%= image_tag(@micropost.video_thumbnail_url)  %>
-    <%= image_tag(@micropost.logo)  %>
-<% end %>
-
-<%# if @micropost.article_url %>
-    <%#= image_tag @micropost.snapshot_url.to_s %>
-<%# end %>
-<p>
-  <b>Title:</b>
-  <%= @micropost.title %>
-</p>
-
-<p>
-  <b>Content:</b>
-  <%= @micropost.content %>
-</p>
-
-<p>
-  <b>Video ID:</b>
-  <%= @video_id %>
-</p>
-
-<p>
-  <b>Video Url:</b>
-  <%= @micropost.video_url %>
-</p>
-
-<p>
-  <b>Article Url:</b>
-  <%= @micropost.article_url %>
-</p>
-
-
-<p>
-  <b>User:</b>
-  <%= @micropost.user_id %>
-</p>
-
-
-<%= link_to 'Edit', edit_micropost_path(@micropost) %> |
-<%= link_to 'Back', microposts_path %>
+</div>
