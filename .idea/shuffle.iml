@@ -55,7 +55,6 @@
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.7.2, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.5.4, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multipart-post (v1.2.0, ruby-1.9.3-p125) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="newrelic_rpm (v3.6.4.122, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.5.9, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="oauth (v0.4.7, ruby-1.9.3-p125) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="oauth2 (v0.8.1, ruby-1.9.3-p125) [gem]" level="application" />

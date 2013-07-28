@@ -10,7 +10,11 @@
 
                 <div class="info">
                   <h5><%= micropost.title %> </h5>
-                  <h6>Post by cqcn1991</h6>
+                  <% if micropost.user %>
+                      <h6>Post by cqcn1991</h6>
+                  <% else %>
+                      <h6>Post by <%= micropost.username %></h6>
+                  <% end %>
                   <div class="like">
                     <% if current_user && current_user.like_for?(micropost) %>
                         <i class="icon-heart icon-heart-red"></i>

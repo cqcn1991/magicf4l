@@ -5,7 +5,7 @@
 <%= image_tag(@user.name) %>
 
 <div class="microposts">
-  <div class="row js-masonry">
+  <div class="row">
     <% @microposts.each do |micropost| %>
         <%= link_to( micropost, remote: true) do %>
 

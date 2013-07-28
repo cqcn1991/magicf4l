@@ -13,7 +13,7 @@ gem 'httparty'
 gem 'carrierwave'
 #gem 'vulcan'
 #gem 'wkhtmltopdf-heroku'
-gem 'newrelic_rpm'
+#gem 'newrelic_rpm'
 
 gem 'will_paginate-bootstrap'
 gem 'will_paginate', '~> 3.0'
