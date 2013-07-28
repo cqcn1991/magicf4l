@@ -1,6 +1,6 @@
 # encoding: UTF-8
 class Micropost < ActiveRecord::Base
-  attr_accessible :content, :title, :video_url, :article_url, :user_id, :video_thumbnail_url, :video_logo_url, :video_id
+  attr_accessible :content, :title, :video_url, :article_url, :user_id, :video_thumbnail_url, :video_logo_url, :video_id, :username
   belongs_to :user
   #mount_uploader :snapshot, SnapshotUploader
   has_reputation :likes, source: :user, aggregated_by: :sum
@@ -35,6 +35,11 @@ class Micropost < ActiveRecord::Base
       decode_response =  ActiveSupport::JSON.decode(response)
       self.title = decode_response['data'][0]['title']
       self.video_logo_url = decode_response['data'][0]['logo']
+      if !self.user
+         self.username =  decode_response['data'][0]['username']
+      end
+
+
     end
   end
 

@@ -9,6 +9,7 @@ class CreateMicroposts < ActiveRecord::Migration
       t.string :article_url
       t.integer :user_id
       t.string :video_id
+      t.string :username
 
       t.timestamps
     end

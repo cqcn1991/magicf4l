@@ -6,7 +6,7 @@
         <%= link_to "Shuffle", root_path %>
         <%= link_to "List", index2_microposts_path %>
         <%# if user_signed_in? %>
-            <%= link_to "New", new_micropost_path %>
+            <%= link_to "Add", new_micropost_path %>
         <%# end %>
       </div>
 
@@ -20,7 +20,7 @@
         <% else %>
             <%#= link_to 'Sign in',new_user_session_path %>
 
-            <%= link_to 'Weibo',user_omniauth_authorize_path(:weibo) %>
+            <%= link_to '微博登陆',user_omniauth_authorize_path(:weibo) %>
         <% end %>
 
         <%#= link_to 'Admin', admin_panel_microposts_path %>

@@ -10,7 +10,7 @@
 
                 <div class="info">
                   <h5><%= micropost.title %> </h5>
-
+                  <h6>Post by cqcn1991</h6>
                   <div class="like">
                     <% if current_user && current_user.like_for?(micropost) %>
                         <i class="icon-heart icon-heart-red"></i>
@@ -26,3 +26,7 @@
     <% end %>
   </div>
 </div>
+<div class="center">
+  <%= will_paginate @microposts, renderer: BootstrapPagination::Rails %>
+</div>
+

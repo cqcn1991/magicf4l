@@ -1,0 +1,43 @@
+<div class="row">
+
+  <div class="intro-title span12 ">
+    <h1 class="cover-title center">just4Magic</h1>
+    <h2 class="center">A random picker for</h2>
+    <h2 class="center">great magic across the web!</h2>
+    <div class="center">
+      <%= link_to( 'Start now', shuffle_microposts_path) %>
+    </div>
+
+
+  </div>
+
+  <div class="microposts-intro-wrapper span12">
+    <div class="row js-masonry" id="microposts">
+      <% @microposts.each do |micropost| %>
+          <%= link_to micropost do %>
+              <%#= link_to micropost.video_url, :target => "_blank" do %>
+
+              <div class="micropost-big span4">
+
+                <%= image_tag(micropost.video_logo_url)  %>
+
+                <div class="info">
+                  <h5><%= micropost.title %> </h5>
+                  <h6>Post by cqcn1991</h6>
+                  <div class="like">
+                    <% if current_user && current_user.like_for?(micropost) %>
+                        <i class="icon-heart icon-heart-red"></i>
+                    <% else %>
+                        <i class="icon-heart"></i>
+                    <% end %>
+                    <%= micropost.reputation_for(:likes).to_i %>
+                  </div>
+                </div>
+              </div>
+          <% end %>
+
+      <% end %>
+    </div>
+  </div>
+</div>
+

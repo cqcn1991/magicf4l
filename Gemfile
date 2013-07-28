@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails','3.2.13'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '2.3.2'
 gem 'devise'
 gem 'simple_form'
 gem 'font-awesome-rails', '3.2.1.1'
@@ -14,6 +14,9 @@ gem 'carrierwave'
 #gem 'vulcan'
 #gem 'wkhtmltopdf-heroku'
 gem 'newrelic_rpm'
+
+gem 'will_paginate-bootstrap'
+gem 'will_paginate', '~> 3.0'
 
 gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'

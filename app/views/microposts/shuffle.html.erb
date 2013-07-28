@@ -1,7 +1,24 @@
-
 <div class="row all-posts">
+
+
   <%= render('cover-micropost') %>
 
+  <div class="microposts-title span12">
+    <h4 class="inline">正在分享……</h4>
+    <div class="icons pull-right">
+      <%= link_to(shuffle_again_microposts_path, remote: true) do %>
+          <i class="icon-random icon-2x"></i>
+      <% end %>
+    </div>
+  </div>
+
   <%= render('microposts/microposts') %>
+
+  <div class="span12 intro">
+
+    <h1 class="center">又发现了什么牛X的魔术？</h1>
+    <h1 class="center">现在<%= link_to '就来分享！', new_micropost_path, class: 'red' %></h1>
+  </div>
+
 
 </div>

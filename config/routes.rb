@@ -28,6 +28,8 @@ Shuffle::Application.routes.draw do
 
   root :to => 'microposts#shuffle'
 
+  match 'intro' => 'static_pages#intro'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

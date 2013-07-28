@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20130721093929) do
     t.string   "article_url"
     t.integer  "user_id"
     t.string   "video_id"
+    t.string   "username"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
   end

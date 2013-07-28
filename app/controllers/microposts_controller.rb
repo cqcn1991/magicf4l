@@ -19,10 +19,9 @@ class MicropostsController < ApplicationController
   # GET /microposts/1.json
   def show
     @micropost = Micropost.find(params[:id])
-    @microposts =  Micropost.all.shuffle.first(3)
-
+    @microposts =  Micropost.all.shuffle.first(4)
     respond_to do |format|
-      format.html # show.html.erb
+      format.html {render }
       format.json { render json: @micropost }
       format.js
     end
@@ -99,9 +98,18 @@ class MicropostsController < ApplicationController
   end
 
   def shuffle
-    @all_microposts =  Micropost.all.shuffle.first(4)
-    @micropost=@all_microposts.first
-    @microposts = @all_microposts[1..3]
+    #if  !cookies[:visited]
+    #  redirect_to intro_path
+    #  cookies[:visited] = { value: true,
+    #                        expires: 20.seconds.from_now   }
+    #else
+
+      @all_microposts =  Micropost.all.shuffle.first(5)
+      @micropost=@all_microposts.first
+      @microposts = @all_microposts[1..4]
+    #end
+    #@new_microposts =  Micropost.order("created_at DESC").first(5)
+
   end
 
 
@@ -111,7 +119,7 @@ class MicropostsController < ApplicationController
   end
 
   def index2
-    @microposts = Micropost.order("created_at DESC").first(20)
+    @microposts = Micropost.paginate(:page => params[:page], :per_page => 20).order("created_at DESC")
     #respond_to do |format|
     #  format.html # index.html.erb
     #  format.js
@@ -119,7 +127,7 @@ class MicropostsController < ApplicationController
   end
 
   def shuffle_again
-    @microposts = Micropost.all.shuffle.first(3)
+    @microposts = Micropost.all.shuffle.first(4)
   end
 
   def like

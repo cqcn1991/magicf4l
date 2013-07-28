@@ -11,22 +11,16 @@
     </div>
   <% end %>
    <div class="field">
-      <%= f.label :video_url %><span>目前只支持youku</span><br />
+   <h2>视频地址</h2>   <span>目前只支持youku，比如http://v.youku.com/v_show/id_XMTUyMzg1NTA0.html</span><br />
       <%= f.text_field :video_url %>
    </div>
 
-  <div class="field">
+ <!-- <div class="field">
     <%= f.label :content %><br />
     <%= f.text_area :content %>
   </div>
-
-
-  <!--<div class="field">-->
-    <%#= f.label :article_url %><br />
-    <!--<%#= f.text_field :article_url %>-->
-  <!--</div>-->
-
+-->
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit  '提交', class: 'btn' %>
   </div>
 <% end %>

@@ -21,11 +21,11 @@
                   <% end %>
               <% end %>
           <% end %>
-          <%#= @micropost.reputation_for(:likes).to_i %>
-          <%= link_to(shuffle_again_microposts_path, remote: true) do %>
-              <!--<i class="icon-refresh icon-spin"></i>-->
+
+      <!--    <%= link_to(shuffle_again_microposts_path, remote: true) do %>
+
               <i class="icon-random icon-2x"></i>
-          <% end %>
+          <% end %>-->
         </div>
         <div class="title">
           <h4 class="cover-micropost-title"><%= @micropost.title %></h4>
@@ -44,8 +44,5 @@
       <% end %>
 
 
-    <!--<embed src="http://player.youku.com/player.php/sid/<%#= @micropost.video_id %>/v.swf"-->
-         <!--allowFullScreen="true" quality="high"  align="middle"-->
-         <!--allowScriptAccess="always" type="application/x-shockwave-flash"></embed>-->
   <% end %>
 </div>
