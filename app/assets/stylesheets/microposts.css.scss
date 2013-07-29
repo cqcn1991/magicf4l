@@ -15,9 +15,6 @@
 }
 
 
-
-
-
 .center {
   float: none;
   margin-left: auto;
@@ -51,7 +48,7 @@
   h1, h2, h3, h4, h5,.cover-micropost-title, a, label, i, span{
     color: #E0E0E0;
   }
-  .microposts {
+  .microposts, .new_microposts {
     h1, h2, h3, h4, h5,.cover-micropost-title, a, label, i {
       color: #999999;
     }
@@ -224,8 +221,7 @@
 }
 
 .microposts-title{
-  margin-top: 20px;
-  margin-bottom:10px;
+  margin-top: 40px;
   font-family: "微软雅黑",Arial,sans-serif;
 
   .inline{
@@ -235,7 +231,47 @@
   }
 }
 
-.micropost {
+.microposts .micropost {
+  position: relative;
+  background: none repeat scroll 0 0 #2A2A2A;
+  transition: background 0.2s ease-in-out 0s;
+  margin-bottom: 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 95px;
+  h5{
+    color: inherit;
+  }
+  &:hover {
+    background: none repeat scroll 0 0 lightgrey;
+  }
+  .info {
+    margin-left: 5px;
+    .title {
+/*      overflow: hidden;
+      white-space: nowrap; *//* Don't forget this one *//*
+      text-overflow: ellipsis;*/
+    }
+    .like {
+      position:absolute;
+      right:10px;
+      bottom:10px;
+    }
+  }
+
+  .cover-linkable{
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1
+  }
+}
+
+
+.new_microposts .micropost {
   position: relative;
   background: none repeat scroll 0 0 #2A2A2A;
   transition: background 0.2s ease-in-out 0s;
@@ -272,9 +308,9 @@
     padding: 0px 20px 5px;
     //height: 50px;
     .title {
-/*      overflow: hidden;
-      white-space: nowrap; *//* Don't forget this one *//*
-      text-overflow: ellipsis;*/
+      /*      overflow: hidden;
+            white-space: nowrap; *//* Don't forget this one *//*
+            text-overflow: ellipsis;*/
     }
     .like {
       position:absolute;

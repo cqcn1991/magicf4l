@@ -1,5 +1,5 @@
 <!--简洁版本-->
-<!--<div class="microposts span12">
+<div class="microposts span12">
   <div class="row">
     <% @microposts.each do |micropost| %>
         <%= link_to( micropost, remote: true) do %>
@@ -32,46 +32,9 @@
 
     <% end %>
   </div>
-</div>-->
-
-
-<div class="microposts span12">
-  <div class="row">
-
-  <% @microposts.each do |micropost| %>
-      <%= link_to( micropost, remote: true, class: 'jump-to-cover') do %>
-          <%#= link_to micropost.video_url, :target => "_blank" do %>
-
-          <div class="micropost span3">
-
-            <div class="img"
-            style="background-image: url('<%= micropost.video_logo_url  %>');">  </div>
-
-
-            <!--<%= image_tag(micropost.video_logo_url)  %>-->
-
-            <div class="info">
-              <h5 class="title"><%= micropost.title %> </h5>
-              <% if micropost.user %>
-              <h6>Post by cqcn1991</h6>
-              <% else %>
-              <h6>Post by <%= micropost.username %></h6>
-              <% end %>
-              <div class="like">
-                <% if current_user && current_user.like_for?(micropost) %>
-                    <i class="icon-heart icon-heart-red"></i>
-                <% else %>
-                    <i class="icon-heart"></i>
-                <% end %>
-                <%= micropost.reputation_for(:likes).to_i %>
-              </div>
-            </div>
-          </div>
-      <% end %>
-
-  <% end %>
 </div>
 
-  </div>
+
+
 
 

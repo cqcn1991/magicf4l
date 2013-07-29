@@ -19,7 +19,7 @@ class MicropostsController < ApplicationController
   # GET /microposts/1.json
   def show
     @micropost = Micropost.find(params[:id])
-    @microposts =  Micropost.all.shuffle.first(4)
+    @microposts =  Micropost.all.shuffle.first(3)
     respond_to do |format|
       format.html {render }
       format.json { render json: @micropost }
@@ -106,7 +106,8 @@ class MicropostsController < ApplicationController
 
       @all_microposts =  Micropost.all.shuffle.first(5)
       @micropost=@all_microposts.first
-      @microposts = @all_microposts[1..4]
+      @microposts = @all_microposts[1..3]
+      @new_microposts =  Micropost.order("created_at DESC").first(4)
     #end
     #@new_microposts =  Micropost.order("created_at DESC").first(5)
 
@@ -127,7 +128,7 @@ class MicropostsController < ApplicationController
   end
 
   def shuffle_again
-    @microposts = Micropost.all.shuffle.first(4)
+    @microposts = Micropost.all.shuffle.first(3)
   end
 
   def like
