@@ -104,7 +104,9 @@ class MicropostsController < ApplicationController
     #                        expires: 20.seconds.from_now   }
     #else
 
-      @all_microposts =  Micropost.all.shuffle.first(5)
+    #在sqlite中random,在PG中如何？
+      @all_microposts =  Micropost.order('Random()').limit(5)
+      #order("RAND()").limit(1)
       @micropost=@all_microposts.first
       @microposts = @all_microposts[1..3]
       @new_microposts =  Micropost.order("created_at DESC").first(4)

@@ -26,9 +26,10 @@ Shuffle::Application.routes.draw do
     end
   end
 
-  root :to => 'microposts#shuffle'
+  root :to => 'static_pages#home'
 
   match 'intro' => 'static_pages#intro'
+  match 'home' => 'static_pages#home'
 
 
   # The priority is based upon order of creation:

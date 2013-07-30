@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>just4Magic - Discover Great Magic </title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%#= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta property="wb:webmaster" content="76037d06a69a83b8" />
+</head>
+<body>
+
+<div class="container row">
+
+
+  <div class="span12 home">
+    <span class="logo">just4magic</span>
+    <h1 class="description">在这里，发现奇迹</h1>
+    <%= link_to '现在开始', shuffle_microposts_path, class:'start-btn' %>
+ <!--   <h2>  <%= random_image %></h2>-->
+    </div>
+  <div id="home-bg">
+    <img src="<%= random_image %>" >
+    <!--<img src="http://imgcdn.ph.126.net/NEDmFw-ti5ynGC3pImcygQ==/2549318864086396440.jpg" >-->
+  </div>
+
+</div>
+
+<%= javascript_include_tag "application" %>
+<%#= javascript_include_tag 'masonry.pkgd' %>
+</body>
+</html>
