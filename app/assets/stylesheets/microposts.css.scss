@@ -125,7 +125,7 @@
 }
 
 .title {
-  margin-top: 5px;
+  //margin-top: 5px;
   //height: 30px;
   //overflow: hidden;
   width: 100%;
@@ -230,6 +230,20 @@
     font-size: 30px;
   }
 }
+
+
+.microposts  .outside{
+  width: 50px;
+    margin-right: -70px;
+  a .message {
+     display: none;
+  }
+  a:hover .message {
+    display: block;
+  }
+  }
+
+
 
 .microposts .micropost {
   position: relative;

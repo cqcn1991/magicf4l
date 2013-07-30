@@ -1,36 +1,21 @@
 <!--简洁版本-->
+
 <div class="microposts span12">
   <div class="row">
-    <% @microposts.each do |micropost| %>
-        <%= link_to( micropost, remote: true) do %>
 
-            <div class="micropost span4">
-              <div class="row ">
-                <div class="cover span2">
-                  <% if micropost.video_id %>
-                      <%= image_tag(micropost.video_thumbnail_url)  %>
-                  <% else %>
-                      <%= image_tag("http://img.bitpixels.com/getthumbnail?code=72621&size=200&url=#{micropost.article_url}") %>
-                  <% end %>
-                </div>
-                <div class="info span2">
+    <div class="icons pull-right outside">
 
-                  <h6><%= micropost.title %> </h6>
-                  <div class="like">
-                    <% if current_user && current_user.like_for?(micropost) %>
-                            <i class="icon-heart icon-heart-red"></i>
-                    <% else %>
-                            <i class="icon-heart"></i>
-                    <% end %>
-                    <%= micropost.reputation_for(:likes).to_i %>
-                  </div>
-                </div>
-              </div>
+      <%= link_to(shuffle_again_microposts_path, remote: true) do %>
 
-            </div>
-        <% end %>
+          <i class="icon-random icon-2x"></i>
+          <div class="message">
+            <h5>换一换</h5>
+          </div>
+      <% end %>
+    </div>
 
-    <% end %>
+   <%= render 'shuffle_microposts' %>
+
   </div>
 </div>
 

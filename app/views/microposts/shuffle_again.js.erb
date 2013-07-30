@@ -3,10 +3,10 @@
     $('.microposts').replaceWith(div);
     $('.microposts').fadeIn('slow');
 });*/
-$('.microposts').fadeOut('slow', function() {
-    var div = $('<%= j render('microposts') %>').hide();
-    $('.microposts').replaceWith(div);
-    $('.microposts').fadeIn('slow');
+$('.shuffle_microposts').fadeOut('slow', function() {
+    var div = $('<%= j render('shuffle_microposts') %>').hide();
+    $('.shuffle_microposts').replaceWith(div);
+    $('.shuffle_microposts').fadeIn('slow');
 
     $(".jump-to-cover").click(function() {
         $('html, body').animate({

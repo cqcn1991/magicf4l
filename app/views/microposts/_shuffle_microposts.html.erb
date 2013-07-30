@@ -1,0 +1,34 @@
+<div class="shuffle_microposts">
+  <% @microposts.each do |micropost| %>
+      <%= link_to( micropost, remote: true, class: 'jump-to-cover') do %>
+
+
+
+          <div class="micropost span4">
+            <div class="row ">
+              <div class="cover span2">
+                <% if micropost.video_id %>
+                    <%= image_tag(micropost.video_thumbnail_url)  %>
+                <% else %>
+                    <%= image_tag("http://img.bitpixels.com/getthumbnail?code=72621&size=200&url=#{micropost.article_url}") %>
+                <% end %>
+              </div>
+              <div class="info span2">
+
+                <h6><%= micropost.title %> </h6>
+                <div class="like">
+                  <% if current_user && current_user.like_for?(micropost) %>
+                      <i class="icon-heart icon-heart-red"></i>
+                  <% else %>
+                      <i class="icon-heart"></i>
+                  <% end %>
+                  <%= micropost.reputation_for(:likes).to_i %>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      <% end %>
+
+  <% end %>
+</div>
