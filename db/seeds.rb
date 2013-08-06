@@ -91,6 +91,12 @@ videos = Micropost.create([
     {video_url:'http://v.youku.com/v_show/id_XNDU2NTc2NDQw.html'},
     {video_url:'http://v.youku.com/v_show/id_XMTc4OTQxNzUy.html'},
     {video_url:'http://v.youku.com/v_show/id_XMTQ5MzYxNzA4.html'}
+
+=begin
+http://v.youku.com/v_show/id_XNTg2OTQ5MzUy.html
+http://v.youku.com/v_show/id_XNTg2OTUxNzE2.html
+http://v.youku.com/v_show/id_XNTgxMzA1MzY0.html
+=end
                           ])
 if videos.all?(&:save)
   puts "categories saved"
