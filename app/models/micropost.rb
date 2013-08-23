@@ -23,18 +23,24 @@ class Micropost < ActiveRecord::Base
 
   def get_video_id
     if !self.video_url.empty?
+      #video_id = self.video_url.split("id_")[1]
+      #ampersandPosition = video_id.index("?f=")
+      #if ampersandPosition
+      #  video_id = video_id[0..ampersandPosition-1]
+      #end
+      #self.video_id = video_id.delete(".html")
+
+      # user发布micropost,里面包含了video_url,用video_url来得到video_id
       video_id = self.video_url.split("id_")[1]
-      ampersandPosition = video_id.index("?f=")
-      if ampersandPosition
-        video_id = video_id[0..ampersandPosition-1]
-      end
-      self.video_id = video_id.delete(".html")
+      ampersandPosition = video_id.index(".html")
+      self.video_id = video_id[0..ampersandPosition-1]
+
 
       #get_logo_url & title
       response = HTTParty.get("http://v.youku.com/player/getPlayList/VideoIDS/#{self.video_id}/timezone/+08/version/5/source/out?password=&ran=2513&n=3")
       decode_response =  ActiveSupport::JSON.decode(response)
       self.title = decode_response['data'][0]['title']
-      self.video_logo_url = decode_response['data'][0]['logo']
+      self.video_logo_url = decode_response['data']['0']['logo']
       if !self.user
          self.username =  decode_response['data'][0]['username']
       end

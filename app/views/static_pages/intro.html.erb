@@ -1,43 +1,52 @@
 <div class="row">
+  <div class="intro span6">
+    <h3>1.这里是干嘛的？</h3>
+    <p>
+      还记得第一次看Michael Vincent的表演视频的时候，才知道原来魔术也可以
+      呈现得如此优雅，再到后来看Armando Lucero，也是这种惊叹。
+      再比如看刘谦，derren brown, max maven, peter turner, dani daortiz,
+      darwin ortiz, michael ammar, Kiko Pastur，柳豪镇……真的太多太多。我发觉，
+    </p>
 
-  <div class="intro-title span12 ">
-    <h1 class="cover-title center">just4Magic</h1>
-    <h2 class="center">A random picker for</h2>
-    <h2 class="center">great magic across the web!</h2>
-    <div class="center">
-      <%= link_to( 'Start now', shuffle_microposts_path) %>
-    </div>
+    <h4 class="red">
+      好的表演，是无价的
+    </h4>
 
+    <p>
+      每一次观看就是一次学习，一次体验。又发现了新的效果，又发现了好的
+      presentation，又发现了经典手法了居然能够这样用。当然更多的情况也就是
+      被各路大师fool到死了……
+    </p>
+
+    <p>
+      所以，我们在这里发出了很多我们觉得很棒的视频，也希望你能和我们交流一
+      下你最近的发现。套用9哥的一句话：
+    </p>
+
+    <p>
+      magic is not a trick, magic is a way, magic is performance.
+    </p>
+
+    <h3>2.怎么用“摇一摇”？</h3>
+    <p>
+      好在，看表演并没有什么要求。无聊了，有时间了，随便打开来看一个，就OK
+      了，anytime, anywhere
+    </p>
+    <p>
+      只要<%= link_to "摇一摇", shuffle_microposts_path, class: 'red', target: '_blank'%>，我们就会为你<span class="red">随机</span>选出三则视频。
+    </p>
+
+    <p>
+      如果你觉得这个视频不错的话，也可以使用“喜欢”来标记一下。当然，我们也悄悄的把youku的广告给去掉了……
+    </p>
+
+    <h3>3.申请内测</h3>
+   <p>    目前，因为新浪的限制的原因，网站的使用人数有限制。所以只能人工进行账
+     号的授权，才能使用。如果你愿意加入内测的话，请在新浪微博联系我<span><%= link_to "@天生命背", "http://weibo.com/u/1695469591", class: 'red', target: '_blank'%></span>
+     ，顺便
+     也说说你最近有看到什么不错的魔术</p>
 
   </div>
 
-  <div class="microposts-intro-wrapper span12">
-    <div class="row js-masonry" id="microposts">
-      <% @microposts.each do |micropost| %>
-          <%= link_to micropost do %>
-              <%#= link_to micropost.video_url, :target => "_blank" do %>
-
-              <div class="micropost-big span4">
-
-                <%= image_tag(micropost.video_logo_url)  %>
-
-                <div class="info">
-                  <h5><%= micropost.title %> </h5>
-                  <h6>Post by cqcn1991</h6>
-                  <div class="like">
-                    <% if current_user && current_user.like_for?(micropost) %>
-                        <i class="icon-heart icon-heart-red"></i>
-                    <% else %>
-                        <i class="icon-heart"></i>
-                    <% end %>
-                    <%= micropost.reputation_for(:likes).to_i %>
-                  </div>
-                </div>
-              </div>
-          <% end %>
-
-      <% end %>
-    </div>
-  </div>
 </div>
 

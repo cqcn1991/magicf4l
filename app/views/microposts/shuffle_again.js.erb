@@ -1,12 +1,10 @@
-/*$('.microposts').fadeOut('slow', function() {
-    var div = $('<%#= j render('microposts') %>').hide();
-    $('.microposts').replaceWith(div);
-    $('.microposts').fadeIn('slow');
-});*/
+$('.shuffle_microposts').addClass('animated shake');
 $('.shuffle_microposts').fadeOut('slow', function() {
     var div = $('<%= j render('shuffle_microposts') %>').hide();
     $('.shuffle_microposts').replaceWith(div);
-    $('.shuffle_microposts').fadeIn('slow');
+      $('.shuffle_microposts').fadeIn('slow', function(){
+        $('.shuffle_microposts').removeClass('animated shake');
+    });
 
     $(".jump-to-cover").click(function() {
         $('html, body').animate({
@@ -14,3 +12,6 @@ $('.shuffle_microposts').fadeOut('slow', function() {
         }, 800);
     });
 });
+
+
+

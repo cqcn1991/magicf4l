@@ -8,6 +8,10 @@
   src: font-url('gotham_bold.eot'); /*URL to font*/
 }
 
+.sign_in .red{
+    color:#FF4F4F;
+  }
+
 .new_micropost {
   #micropost_video_url{
     width: 50%
@@ -31,7 +35,7 @@
 
 .intro {
   font-family: "微软雅黑",Arial,sans-serif;
-  margin-top: 70px;
+  //margin-top: 70px;
   span {
     display: inline;
   }
@@ -39,13 +43,16 @@
     font-weight: 200;
     //font-size: 80px;
   }
+  .red{
+    color:#FF4F4F;
+  }
   a.red {
     color:#FF4F4F;
   }
 }
 
 .main-wrapper{
-  h1, h2, h3, h4, h5,.cover-micropost-title, a, label, i, span{
+  h1, h2, h3, h4, h5,.cover-micropost-title, a, label, i, span, p{
     color: #E0E0E0;
   }
   .microposts, .new_microposts {
@@ -243,7 +250,26 @@
   }
   }
 
+.microposts .shuffle-btn {
+  &:hover{
+    background-color: #E74C3C;
+  }
+  padding: 12px 18px 13px;
+  background: none repeat scroll 0 0 #FF6666;
+  border: medium none;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: none;
+  text-decoration: none;
+  text-shadow: none;
 
+  transition: all 0.25s ease 0s;
+  text-align: center;
+  vertical-align: middle;
+ .white {
+   color: white;
+   font-family: "微软雅黑",Arial,sans-serif;
+ }
+}
 
 .microposts .micropost {
   position: relative;
@@ -399,9 +425,9 @@ textarea#micropost_content {
 }
 
 .home{
-  margin-top: 200px;
+  margin-top: 130px;
 
-  .logo, .description, .start-btn{
+  .logo, .description, .start-btn, .notice{
     color:#FFFFFF;
     font-family: "Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
   }

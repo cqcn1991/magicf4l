@@ -13,7 +13,11 @@ Shuffle::Application.routes.draw do
     end
   end
 
-  resources :users, only: [:show]
+  resources :users, only: [:show] do
+    collection do
+      get :sign_in_too
+    end
+  end
 
   resources :categories
 

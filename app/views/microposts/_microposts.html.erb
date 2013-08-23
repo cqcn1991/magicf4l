@@ -3,7 +3,7 @@
 <div class="microposts span12">
   <div class="row">
 
-    <div class="icons pull-right outside">
+ <!--   <div class="icons pull-right outside">
 
       <%= link_to(shuffle_again_microposts_path, remote: true) do %>
 
@@ -12,9 +12,15 @@
             <h5>换一换</h5>
           </div>
       <% end %>
-    </div>
+    </div>-->
 
    <%= render 'shuffle_microposts' %>
+
+      <%= link_to(shuffle_again_microposts_path, remote: true) do %>
+         <div class="span6 offset3 shuffle-btn">
+           <h2 class="white">摇一摇</h2>
+         </div>
+      <% end %>
 
   </div>
 </div>
