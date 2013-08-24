@@ -40,7 +40,7 @@ class Micropost < ActiveRecord::Base
       response = HTTParty.get("http://v.youku.com/player/getPlayList/VideoIDS/#{self.video_id}/timezone/+08/version/5/source/out?password=&ran=2513&n=3")
       decode_response =  ActiveSupport::JSON.decode(response)
       self.title = decode_response['data'][0]['title']
-      self.video_logo_url = decode_response['data']['0']['logo']
+      self.video_logo_url = decode_response['data'][0]['logo']
       if !self.user
          self.username =  decode_response['data'][0]['username']
       end
