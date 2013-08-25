@@ -1,4 +1,4 @@
-require File.expand_path('../boot', __FILE__)
+  require File.expand_path('../boot', __FILE__)
 
 require 'csv'
 require 'rails/all'
@@ -72,5 +72,7 @@ module Shuffle
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
     config.assets.initialize_on_precompile = false
+
+    config.paths['app/views'] << "app/views/devise"
   end
 end

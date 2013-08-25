@@ -29,6 +29,7 @@ videos = Micropost.create([
       {video_url:'http://v.youku.com/v_show/id_XNTgxMzc2OTA4.html'},
       {video_url:'http://v.youku.com/v_show/id_XNTgxMjk4MTc2.html'},
       {video_url:'http://v.youku.com/v_show/id_XNTgxMjA1OTQ4.html'},
+
       {video_url:'http://v.youku.com/v_show/id_XNTgxMTk2NzMy.html'},
       {video_url:'http://v.youku.com/v_show/id_XNTU1OTk2OTM2.html'},
       {video_url:'http://v.youku.com/v_show/id_XNTI4ODc4MzQ0.html'},
