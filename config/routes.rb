@@ -1,4 +1,7 @@
 Shuffle::Application.routes.draw do
+  resources :news_items
+
+
   devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks", :registrations => "registrations" }
 
   resources :microposts  do

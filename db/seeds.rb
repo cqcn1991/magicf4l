@@ -101,7 +101,7 @@ videos = Micropost.create([
       {video_url:'http://v.youku.com/v_show/id_XNTY5OTgxMzEy.html'},
       {video_url:'http://v.youku.com/v_show/id_XMzIwODM2MDgw.html'},
       {video_url:'http://v.youku.com/v_show/id_XNTg2OTUxNzE2.html'},
-      {video_url:'http://v.youku.com/v_show/id_XNTg2OTQ5MzUy.html'},
+      #{video_url:'http://v.youku.com/v_show/id_XNTg2OTQ5MzUy.html'},
       {video_url:'http://v.youku.com/v_show/id_XNTgxMzA1MzY0.html'},
       {video_url:'http://v.youku.com/v_show/id_XNTkxNzkzNzg0.html'},
       {video_url:'http://v.youku.com/v_show/id_XMjUxMDg3Mg.html'},
@@ -118,8 +118,8 @@ videos = Micropost.create([
       {video_url:'http://v.youku.com/v_show/id_XMTUwMzEwNzc2.html'},
       {video_url:'http://v.youku.com/v_show/id_XMjQ0NTI0NDQw.html'},
       {video_url:'http://v.youku.com/v_show/id_XMTA5Mzc3MDM2.html'},
-      {video_url:'http://v.youku.com/v_show/id_XNTk4NjE5MjE2.html'}
-
+      {video_url:'http://v.youku.com/v_show/id_XNTk4NjE5MjE2.html'},
+      {video_url:'http://v.youku.com/v_show/id_XNjAxOTU2NTg4.html'}
                           ])
 
 if videos.all?(&:save)
