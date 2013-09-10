@@ -1,5 +1,9 @@
 require "bundler/capistrano"
 
+set :default_environment, {
+    'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+}
+
 server "106.186.30.85", :web, :app, :db, primary: true
 
 set :application, "just4magic"
@@ -12,8 +16,14 @@ set :scm, "git"
 set :repository, "git@github.com:cqcn1991/magicf4l.git"
 set :branch, "master"
 
+#set :local_repository, "F:/Sites/shuffle/.git"
+#set :scm, :none
+#set :repository, "."
+#set :deploy_via, :copy
+
+
 default_run_options[:pty] = true
-ssh_options[:forward_agent] = true
+ssh_options[:forward_agent] = false
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
@@ -48,4 +58,5 @@ namespace :deploy do
     end
   end
   before "deploy", "deploy:check_revision"
+
 end
