@@ -30,16 +30,16 @@ gem 'cancan'
 
 group :development, :test do
   gem 'sqlite3'
-  #gem 'pg'
   gem 'rspec-rails', '2.11.0'
   gem 'sunspot_solr'
 end
 
 group :production do
   gem 'activerecord-postgresql-adapter'
-  gem 'pg'
-  gem 'unicorn'
+  #gem 'pg'
+  gem 'postgres-pr'
 end
+
 
 
 # Gems used only for assets and not required
@@ -64,6 +64,10 @@ gem 'jquery-rails'
 
 # Use unicorn as the app server
 #gem 'unicorn'
+
+if !RUBY_PLATFORM=~ /win32/
+  gem 'unicorn'
+end
 
 # Deploy with Capistrano
 gem 'capistrano'
