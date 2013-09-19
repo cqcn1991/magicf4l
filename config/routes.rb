@@ -1,4 +1,7 @@
 Shuffle::Application.routes.draw do
+  resources :notes
+
+
   resources :news_items
 
 
