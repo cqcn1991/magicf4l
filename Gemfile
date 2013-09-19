@@ -32,6 +32,9 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.11.0'
   gem 'sunspot_solr'
+  # Capistrano stuff
+  gem 'capistrano'
+  gem 'capistrano-unicorn', :git => 'https://github.com/sosedoff/capistrano-unicorn.git', :branch => 'master', :require => false
 end
 
 group :production do
@@ -70,7 +73,6 @@ if !RUBY_PLATFORM=~ /win32/
 end
 
 # Deploy with Capistrano
-gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
