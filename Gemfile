@@ -41,6 +41,7 @@ group :production do
   gem 'activerecord-postgresql-adapter'
   #gem 'pg'
   gem 'postgres-pr'
+  gem 'unicorn'
 end
 
 
@@ -68,9 +69,9 @@ gem 'jquery-rails'
 # Use unicorn as the app server
 #gem 'unicorn'
 
-if !RUBY_PLATFORM=~ /win32/
-  gem 'unicorn'
-end
+#if !RUBY_PLATFORM=~ /win32/
+#
+#end
 
 # Deploy with Capistrano
 
