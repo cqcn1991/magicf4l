@@ -10,7 +10,7 @@ set :application, "just4magic"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
-set :use_sudo, true
+set :use_sudo, false
 set :bundle_flags, ''
 
 set :scm, "git"
@@ -31,7 +31,7 @@ namespace :deploy do
       %w[start stop restart].each do |command|
         desc "#{command} unicorn server"
         task command, roles: :app, except: {no_release: true} do
-          sudo " /etc/init.d/unicorn_#{application} #{command}"
+         sudo "/etc/init.d/unicorn_#{application} #{command}"
         end
       end
 
