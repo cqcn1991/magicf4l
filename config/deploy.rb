@@ -6,12 +6,15 @@ set :default_environment, {
 
 server "106.186.30.85", :web, :app, :db, primary: true
 
+#cat ~/.ssh/id_rsa.pub | ssh deployer@106.186.30.85'cat >>
+
+
 set :application, "just4magic"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
-set :bundle_flags, ''
+#set :bundle_flags, ''
 
 set :scm, "git"
 set :repository, "git@github.com:cqcn1991/magicf4l.git"
@@ -31,9 +34,8 @@ namespace :deploy do
       %w[start stop restart].each do |command|
         desc "#{command} unicorn server"
         task command, roles: :app, except: {no_release: true} do
-         sudo "/etc/init.d/unicorn_#{application} #{command}"
+        run "#{sudo} /etc/init.d/unicorn_#{application} #{command}"
         end
-
       end
 
   task :setup_config, roles: :app do
@@ -50,15 +52,15 @@ namespace :deploy do
   end
   after "deploy:finalize_update", "deploy:symlink_config"
 
-  desc "Make sure local git is in sync with remote."
-  task :check_revision, roles: :web do
-    unless `git rev-parse HEAD` == `git rev-parse origin/master`
-      puts "WARNING: HEAD is not the same as origin/master"
-      puts "Run `git push` to sync changes."
-      exit
+    desc "Make sure local git is in sync with remote."
+    task :check_revision, roles: :web do
+      unless `git rev-parse HEAD` == `git rev-parse origin/master`
+        puts "WARNING: HEAD is not the same as origin/master"
+        puts "Run `git push` to sync changes."
+        exit
+      end
     end
-  end
-  before "deploy", "deploy:check_revision"
+    before "deploy", "deploy:check_revision"
 
   namespace :db do
     desc "Populates the Production Database"
@@ -78,9 +80,5 @@ namespace :deploy do
         end
       end
 
-
-  require 'capistrano-unicorn'
-  #after 'deploy:restart', 'unicorn:reload' # app IS NOT preloaded
-  after 'deploy:restart', 'unicorn:restart'  # app preloaded
 
 end

@@ -25,24 +25,22 @@ gem 'jquery-ui-rails'
 gem 'activerecord-reputation-system'
 gem 'cancan'
 
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.11.0'
-  gem 'sunspot_solr'
+  #gem 'sunspot_solr'
   # Capistrano stuff
-  gem 'capistrano'
-  gem 'capistrano-unicorn', :git => 'https://github.com/sosedoff/capistrano-unicorn.git', :branch => 'master', :require => false
+  #gem 'capistrano'
+  #gem 'capistrano-unicorn', :git => 'https://github.com/sosedoff/capistrano-unicorn.git', :branch => 'master', :require => false
 end
 
-group :production do
-  gem 'activerecord-postgresql-adapter'
-  #gem 'pg'
-  gem 'postgres-pr'
-
-end
+#group :production do
+#
+#end
 
 
 
@@ -70,6 +68,11 @@ gem 'jquery-rails'
 #gem 'unicorn'
 
 gem 'unicorn'
+gem 'capistrano'
+
+gem 'activerecord-postgresql-adapter'
+#gem 'pg'
+gem 'postgres-pr'
 
 #if !RUBY_PLATFORM=~ /win32/
 #
