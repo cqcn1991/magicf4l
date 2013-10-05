@@ -41,7 +41,7 @@ group :production do
   gem 'activerecord-postgresql-adapter'
   #gem 'pg'
   gem 'postgres-pr'
-  gem 'unicorn'
+
 end
 
 
@@ -68,6 +68,8 @@ gem 'jquery-rails'
 
 # Use unicorn as the app server
 #gem 'unicorn'
+
+gem 'unicorn'
 
 #if !RUBY_PLATFORM=~ /win32/
 #

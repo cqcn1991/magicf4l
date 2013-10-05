@@ -33,6 +33,7 @@ namespace :deploy do
         task command, roles: :app, except: {no_release: true} do
          sudo "/etc/init.d/unicorn_#{application} #{command}"
         end
+
       end
 
   task :setup_config, roles: :app do
