@@ -1,8 +1,11 @@
 <div class="span8 offset2">
   <% @notes.each do |note| %>
-      <div class="note">
-     <h3><%= note.title %></h3>
-     <%= simple_format note.content %>
+      <div class="note micropost-big">
+        <div class="info">
+          <h2><%= note.title %></h2>
+          <%= simple_format note.content %>
+        </div>
+
       </div>
   <% end %>
 </div>

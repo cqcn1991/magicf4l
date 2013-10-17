@@ -7,7 +7,7 @@
     <file path="/routes.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1377250355437" ignored="false" />
     <file path="/site.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374665296475" ignored="false" />
     <file path="/category.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1376311535721" ignored="false" />
-    <file path="/index.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1378908766013" ignored="false" />
+    <file path="/index.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381398178092" ignored="false" />
     <file path="/sites_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369918086370" ignored="false" />
     <file path="/shuffle.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1375454738833" ignored="false" />
     <file path="/_shuffle_again.js.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1365309801545" ignored="false" />
@@ -21,7 +21,7 @@
     <file path="/Dummy.txt" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1375002274328" ignored="false" />
     <file path="/shuffle_again.js.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1376910436466" ignored="false" />
     <file path="/_form.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1376320105832" ignored="false" />
-    <file path="/Gemfile" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1379580888464" ignored="false" />
+    <file path="/Gemfile" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381998066381" ignored="false" />
     <file path="/sites.rake" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369573380053" ignored="false" />
     <file path="/20130406142917_create_sites.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369664449650" ignored="false" />
     <file path="/sites_new.rake" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1369755570465" ignored="false" />
@@ -31,23 +31,23 @@
     <file path="/microposts_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1377422144987" ignored="false" />
     <file path="/micropost.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1375878443914" ignored="false" />
     <file path="/20130601100325_create_microposts.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374937089052" ignored="false" />
-    <file path="/microposts.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1377250770621" ignored="false" />
+    <file path="/microposts.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381158433438" ignored="false" />
     <file path="/imgkit.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370521089069" ignored="false" />
     <file path="$PROJECT_DIR$/../soccertime/app/views/player_files/index.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370529620856" ignored="false" />
     <file path="$PROJECT_DIR$/../soccertime/app/assets/stylesheets/player_files.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370531647194" ignored="false" />
     <file path="$PROJECT_DIR$/../soccertime/app/views/layouts/application.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1371392018742" ignored="false" />
-    <file path="/application.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1377245076268" ignored="false" />
+    <file path="/application.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381146263412" ignored="false" />
     <file path="$PROJECT_DIR$/../soccertime/app/views/player_files/show.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1371391941084" ignored="false" />
     <file path="$PROJECT_DIR$/../greissue/app/views/thoughts/_thought.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370573027990" ignored="false" />
     <file path="/_thought.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1370570750140" ignored="false" />
     <file path="$PROJECT_DIR$/../soccertime/app/assets/javascripts/replies.js" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1371392156565" ignored="false" />
     <file path="/replies.js" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1371391813328" ignored="false" />
-    <file path="$PROJECT_DIR$/../listentozzk/Gemfile" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1375269342981" ignored="false" />
-    <file path="$PROJECT_DIR$/../listentozzk/app/assets/stylesheets/scaffolds.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389025842" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/Gemfile" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381146998410" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/assets/stylesheets/scaffolds.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381147699703" ignored="false" />
     <file path="$PROJECT_DIR$/../listentozzk/config/routes.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1376036747761" ignored="false" />
     <file path="$PROJECT_DIR$/../listentozzk/app/views/tweets/_form.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372383494031" ignored="false" />
     <file path="$PROJECT_DIR$/../listentozzk/app/views/tweets/index.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389376322" ignored="false" />
-    <file path="$PROJECT_DIR$/../listentozzk/app/views/layouts/application.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374466244738" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/views/layouts/application.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381147677555" ignored="false" />
     <file path="$PROJECT_DIR$/../listentozzk/db/schema.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389025842" ignored="false" />
     <file path="$PROJECT_DIR$/../listentozzk/db/migrate/20130628012105_create_tweets.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372383478059" ignored="false" />
     <file path="$PROJECT_DIR$/../listentozzk/app/assets/stylesheets/tweets.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1372389221234" ignored="false" />
@@ -87,7 +87,7 @@
     <file path="/replace.js" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374461970693" ignored="false" />
     <file path="/omniauth_callbacks_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374464163121" ignored="false" />
     <file path="$PROJECT_DIR$/../listentozzk/db/migrate/20130713072022_devise_create_users.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374466127011" ignored="false" />
-    <file path="/_footer.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1378907906245" ignored="false" />
+    <file path="/_footer.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381996814074" ignored="false" />
     <file path="/like.js.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374488822311" ignored="false" />
     <file path="/production.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374764451782" ignored="false" />
     <file path="/load.js.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374577027706" ignored="false" />
@@ -95,7 +95,7 @@
     <file path="/dummy.xml" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374664985504" ignored="false" />
     <file path="/temp.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374665218242" ignored="false" />
     <file path="/video2.rake" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374666376726" ignored="false" />
-    <file path="/intro.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1377249631010" ignored="false" />
+    <file path="/intro.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381146784288" ignored="false" />
     <file path="/static_pages_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1376036721858" ignored="false" />
     <file path="/new.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1377422004602" ignored="false" />
     <file path="/scaffolds.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1374985911571" ignored="false" />
@@ -104,7 +104,7 @@
     <file path="$PROJECT_DIR$/../listentozzk/app/models/webpage.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1375270204884" ignored="false" />
     <file path="/webpage.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1375270204884" ignored="false" />
     <file path="$PROJECT_DIR$/../listentozzk/app/views/webpages/new.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1375269430487" ignored="false" />
-    <file path="$PROJECT_DIR$/../listentozzk/app/controllers/static_pages_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1376037022293" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/controllers/static_pages_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381143677110" ignored="false" />
     <file path="$PROJECT_DIR$/../listentozzk/app/views/static_pages/newbie2newbie.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1376038120305" ignored="false" />
     <file path="/newbie2newbie.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1376037459674" ignored="false" />
     <file path="$PROJECT_DIR$/../soccermap/db/schema.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1376311391779" ignored="false" />
@@ -133,14 +133,17 @@
     <file path="/application.css" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1376356641709" ignored="false" />
     <file path="/number_keepers_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1376365575868" ignored="false" />
     <file path="/application_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1377419646520" ignored="false" />
-    <file path="/news_item.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1377695478609" ignored="false" />
+    <file path="/news_item.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381154487090" ignored="false" />
     <file path="/news_items_controller.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1377695341346" ignored="false" />
     <file path="/.gitignore" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1378628558366" ignored="false" />
     <file path="/database.yml" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1378629369928" ignored="false" />
     <file path="/deploy.rb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1380900070194" ignored="false" />
-    <file path="/unicorn_init.sh" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1379594234077" ignored="false" />
+    <file path="/unicorn_init.sh" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1380963277568" ignored="false" />
     <file path="/nginx.conf" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1378683098241" ignored="false" />
     <file path="/notes.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1378909100390" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/views/static_pages/intro.html.erb" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381147303246" ignored="false" />
+    <file path="$PROJECT_DIR$/../listentozzk/app/assets/stylesheets/static_pages.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381146803507" ignored="false" />
+    <file path="/static_pages.css.scss" changelist="6a726319-5e89-41f7-b9ec-be118314c5e2" time="1381146799325" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,37 +168,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="0" selection-start="2633" selection-end="2633" vertical-scroll-proportion="0.8292683">
+            <state line="25" column="12" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unicorn.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
+      <file leaf-file-name="_footer.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="3" column="42" selection-start="87" selection-end="87" vertical-scroll-proportion="-2.0357144">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="34" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unicorn_init.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/unicorn_init.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="5" selection-start="846" selection-end="851" vertical-scroll-proportion="-18.870968">
+            <state line="1" column="11" selection-start="41" selection-end="41" vertical-scroll-proportion="0.05026455">
               <folding />
             </state>
           </provider>
@@ -211,22 +205,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/news_items/_form.html.erb" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/Capfile" />
         <option value="$PROJECT_DIR$/config/unicorn.rb" />
         <option value="$PROJECT_DIR$/config/nginx.conf" />
-        <option value="$PROJECT_DIR$/app/views/news_items/index.html.erb" />
         <option value="$PROJECT_DIR$/lib/deploy/seed.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/notes/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/notes.css.scss" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/config/unicorn_init.sh" />
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
+        <option value="$PROJECT_DIR$/config/unicorn_init.sh" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
+        <option value="$PROJECT_DIR$/app/models/news_item.rb" />
+        <option value="$PROJECT_DIR$/app/views/notes/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss" />
+        <option value="$PROJECT_DIR$/app/views/news_items/index.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -238,10 +232,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -269,6 +261,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,14 +290,179 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static_pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="news_items" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shuffle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,7 +470,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.sourceCode.General" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../soccermap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../listentozzk" />
     <property name="FullScreen" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -320,6 +478,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Sites\shuffle\app\assets\images" />
       <recent name="F:\Sites\shuffle\app\assets" />
       <recent name="F:\Sites\shuffle\public\scripts" />
     </key>
@@ -509,7 +668,7 @@
     <configuration default="true" type="RackRunConfigurationType" factoryName="Rack">
       <module name="" />
       <RACK_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RACK_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RACK_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="F:\Sites\shuffle" />
       <RACK_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RACK_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RACK_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -696,25 +855,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6749175" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6749175" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22781774" sideWeight="0.68367344" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2315951" sideWeight="0.6864407" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31632653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31355932" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -783,90 +942,98 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="303" selection-end="303" vertical-scroll-proportion="0.46769232" />
+        <state line="26" column="15" selection-start="790" selection-end="790" vertical-scroll-proportion="-8.142858" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="27" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/microposts/index2.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="68" selection-start="504" selection-end="504" vertical-scroll-proportion="-8.821428" />
+        <state line="10" column="28" selection-start="357" selection-end="361" vertical-scroll-proportion="-4.642857" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/notes.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/models/news_item.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="7" selection-start="183" selection-end="183" vertical-scroll-proportion="0.101604275" />
+        <state line="14" column="8" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/note.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/microposts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/microposts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/notes/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="138" selection-end="138" vertical-scroll-proportion="-0.6785714" />
+        <state line="4" column="35" selection-start="159" selection-end="159" vertical-scroll-proportion="0.21111111" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.example.yml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/microposts.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="115" selection-start="213" selection-end="213" vertical-scroll-proportion="0.050666668" />
+        <state line="475" column="76" selection-start="9478" selection-end="9478" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/app/views/news_items/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="13" column="51" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="135" selection-start="593" selection-end="593" vertical-scroll-proportion="0.20547946" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="531" selection-end="531" vertical-scroll-proportion="0.63414633" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/pdfkit.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="65" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="9" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/micropost.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="34" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/unicorn_init.sh">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="846" selection-end="851" vertical-scroll-proportion="-18.870968">
+        <state line="27" column="12" selection-start="544" selection-end="544" vertical-scroll-proportion="0.8312611">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="0" selection-start="2633" selection-end="2633" vertical-scroll-proportion="0.8292683">
+        <state line="25" column="12" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="42" selection-start="87" selection-end="87" vertical-scroll-proportion="-2.0357144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="11" selection-start="41" selection-end="41" vertical-scroll-proportion="0.05026455">
           <folding />
         </state>
       </provider>

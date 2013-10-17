@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
+ruby '1.9.3'
 
 gem 'rails','3.2.13'
 gem 'bootstrap-sass', '2.3.2'
+
+
 gem 'devise'
 gem 'simple_form'
 gem 'font-awesome-rails', '3.2.1.1'
@@ -34,13 +37,18 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
   #gem 'sunspot_solr'
   # Capistrano stuff
-  #gem 'capistrano'
-  #gem 'capistrano-unicorn', :git => 'https://github.com/sosedoff/capistrano-unicorn.git', :branch => 'master', :require => false
+  gem 'capistrano'
+  gem 'capistrano-unicorn', :git => 'https://github.com/sosedoff/capistrano-unicorn.git', :branch => 'master', :require => false
 end
 
-#group :production do
-#
-#end
+group :production do
+  gem 'unicorn'
+  #gem 'capistrano'
+
+  gem 'activerecord-postgresql-adapter'
+  #gem 'pg'
+  gem 'postgres-pr'
+end
 
 
 
@@ -67,12 +75,7 @@ gem 'jquery-rails'
 # Use unicorn as the app server
 #gem 'unicorn'
 
-gem 'unicorn'
-gem 'capistrano'
 
-gem 'activerecord-postgresql-adapter'
-#gem 'pg'
-gem 'postgres-pr'
 
 #if !RUBY_PLATFORM=~ /win32/
 #

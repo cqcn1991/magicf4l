@@ -8,13 +8,12 @@ server "106.186.30.85", :web, :app, :db, primary: true
 
 #cat ~/.ssh/id_rsa.pub | ssh deployer@106.186.30.85'cat >>
 
-
 set :application, "just4magic"
 set :user, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
-#set :bundle_flags, ''
+set :bundle_flags, ''
 
 set :scm, "git"
 set :repository, "git@github.com:cqcn1991/magicf4l.git"

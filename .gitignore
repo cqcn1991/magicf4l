@@ -24,3 +24,5 @@ doc/
 .idea/*
 
 /config/database.yml
+
+Gemfile.lock

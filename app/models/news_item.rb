@@ -9,7 +9,14 @@ class NewsItem < ActiveRecord::Base
     url = self.address
     doc = Nokogiri::HTML(open(url))
     self.title = doc.css("title").text
+  end
 
+  def domain
+    url=self.address
+    uri = URI.parse(url)
+    uri = URI.parse("http://#{url}") if uri.scheme.nil?
+    host = uri.host.downcase
+    host.start_with?('www.') ? host[4..-1] : host
   end
 
 
