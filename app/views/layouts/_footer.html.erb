@@ -5,6 +5,7 @@
       <div class="menu">
         <%= link_to "摇一摇", shuffle_microposts_path %>
         <%= link_to "添加视频", new_micropost_path %>
+        <%= link_to "全部视频", index2_microposts_path %>
         <% if Rails.env.development? %>
             <%= link_to "News", news_items_path %>
             <%= link_to "Notes", notes_path %>
