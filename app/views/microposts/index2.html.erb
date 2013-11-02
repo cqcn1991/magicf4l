@@ -11,7 +11,7 @@
                 <div class="info">
                   <h5><%= micropost.title %> </h5>
                   <% if micropost.user %>
-                      <h6>Post by cqcn1991</h6>
+                      <h6>Post by <%= micropost.user.name %></h6>
                   <% else %>
                       <h6>Post by <%= micropost.username %></h6>
                   <% end %>
