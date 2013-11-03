@@ -3,9 +3,9 @@
   <div class="container">
     <div class="footer span12">
       <div class="menu">
-        <%= link_to "摇一摇", shuffle_microposts_path %>
-        <%= link_to "推荐视频", new_micropost_path %>
-        <%= link_to "全部视频", index2_microposts_path %>
+        <%= link_to "发现", shuffle_microposts_path %>
+        <%= link_to "添加视频", new_micropost_path %>
+        <%#= link_to "全部视频", index2_microposts_path %>
         <% if Rails.env.development? %>
             <%= link_to "News", news_items_path %>
             <%= link_to "Notes", notes_path %>
@@ -18,8 +18,12 @@
 
       <div class="sign-in pull-right">
         <% if user_signed_in? %>
-            <%= link_to current_user.name, current_user %>
-         <!--<span>  <%= current_user.name %>   </span>-->
+            <%= link_to current_user do %>
+                <%= current_user.name %>
+                <i class="icon-heart"></i>
+                <%= current_user.likes_number %>
+            <% end %>
+
             <%= link_to '登出', destroy_user_session_path, method: :delete %>
 
         <% else %>

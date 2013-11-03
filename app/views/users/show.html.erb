@@ -1,5 +1,22 @@
 
 
+<!--<h2 class="cover-micropost-title">我推荐的</h2>
+<div class="list">
+  <% @my_microposts.each do |micropost| %>
+      <div>
+        <%= link_to micropost.title, micropost.video_url.presence || micropost.article_url%>
+        <div class="pull-right">
+          <%= link_to 'Destroy', micropost, method: :delete, data: { confirm: 'Are you sure?' }, class: "pull-right" %>
+          <i class="icon-heart"></i>
+          <span><%= micropost.reputation_for(:likes).to_i %></span>
+        </div>
+
+      </div>
+  <% end %>
+</div>-->
+
+<h2 class="cover-micropost-title">我喜欢的</h2>
+
 <%#= image_tag(@user.name) %>
 <div class="microposts">
   <div class="row" id="microposts-list">
@@ -7,7 +24,7 @@
         <%= link_to micropost do %>
             <%#= link_to micropost.video_url, :target => "_blank" do %>
 
-            <div class="micropost-big span4">
+            <div class="micropost-big span3">
 
               <%= image_tag(micropost.video_logo_url)  %>
 

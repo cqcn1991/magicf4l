@@ -14,6 +14,10 @@ class User < ActiveRecord::Base
   validates :name, presence: true
   # attr_accessible :title, :body
 
+  def likes_number
+    Micropost.evaluated_by(:likes, self).length
+  end
+
   def self.from_omniauth(auth)
     #where(auth.slice(:provider, :uid)).first_or_create do |user|
     where(auth.slice(:provider, :uid)).first_or_initialize do |user|
