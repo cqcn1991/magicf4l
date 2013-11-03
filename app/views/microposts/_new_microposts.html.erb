@@ -1,9 +1,6 @@
 
-<div class="new_microposts span12">
-  <div class="row">
 
-    <% @new_microposts.each do |micropost| %>
-        <%= link_to( micropost, remote: true, class: 'jump-to-cover') do %>
+        <%= link_to micropost do %>
             <%#= link_to micropost.video_url, :target => "_blank" do %>
 
             <div class="micropost span3">
@@ -14,7 +11,7 @@
               <div class="info">
                 <h5 class="title"><%= micropost.title %> </h5>
                 <% if micropost.user %>
-                    <h6>Post by cqcn1991</h6>
+                    <h6>Post by <%= micropost.user.name %></h6>
                 <% else %>
                     <h6>Post by <%= micropost.username %></h6>
                 <% end %>
@@ -30,7 +27,3 @@
             </div>
         <% end %>
 
-    <% end %>
-  </div>
-
-</div>

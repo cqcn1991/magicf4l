@@ -228,15 +228,26 @@
 }
 
 .microposts-title{
-  margin-top: 40px;
+  //margin-top: 40px;
   font-family: "微软雅黑",Arial,sans-serif;
-
-  .inline{
-    display: inline;
+  margin-bottom: 10px;
+  position:relative;
+  h4 {
     font-weight: 200;
     font-size: 30px;
+    margin: 10px, 0px;
+  }
+  .inline{
+    display: inline-block;
+  }
+  a {
+    vertical-align:text-bottom;
+    position:absolute;
+    bottom:0;
+    right: 0;
   }
 }
+
 
 
 .microposts  .outside{
@@ -310,6 +321,9 @@
   }
 }
 
+.popular_microposts {
+   margin-bottom: 20px;
+}
 
 .new_microposts .micropost {
   position: relative;

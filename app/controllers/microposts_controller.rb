@@ -7,6 +7,8 @@ class MicropostsController < ApplicationController
   # GET /microposts.json
   def index
     @microposts = Micropost.all
+    @new_microposts =  Micropost.order("created_at DESC").first(4)
+    @popular_microposts = Micropost.find_with_reputation(:likes, :all, order: 'likes desc').first(4)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -123,6 +125,7 @@ class MicropostsController < ApplicationController
 
   def index2
     @microposts = Micropost.paginate(:page => params[:page], :per_page => 20).order("created_at DESC")
+
     #respond_to do |format|
     #  format.html # index.html.erb
     #  format.js
