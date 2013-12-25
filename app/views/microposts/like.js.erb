@@ -1,6 +1,21 @@
-var like_icon= $('#<%=dom_id(@micropost)%>').find('.icon-heart');
-var like_link= $('#<%=dom_id(@micropost)%>').find('.like');
+var micropost = $('#<%=dom_id(@micropost)%>')
+var like_icon= $(micropost).find('.icon-heart');
+var like_link= $(micropost).find('.like');
+var like_numer= $(micropost).find('.like_number');
+var number = parseInt($(like_numer).text());
 $(like_icon).toggleClass('icon-heart-red');
 $(like_link).each(function(){
-    this.href = this.href.indexOf('type=unlike') != -1 ? this.href.replace('type=unlike', 'type=like') : this.href.replace('type=like', 'type=unlike');
+    if (this.href.indexOf('type=unlike') != -1)      {
+        this.href = this.href.replace('type=unlike', 'type=like');
+        number -= 1;
+        $(like_numer).html(number)
+    }
+    else if(this.href.indexOf('type=like') != -1)
+    {
+        this.href = this.href.replace('type=like', 'type=unlike');
+        number += 1;
+        $(like_numer).html(number)
+    }
+//    this.href = this.href.indexOf('type=unlike') != -1 ? this.href.replace('type=unlike', 'type=like') : this.href.replace('type=like', 'type=unlike');
 });
+

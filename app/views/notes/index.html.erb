@@ -1,41 +1,23 @@
-<div class="span8 offset2">
-  <% @notes.each do |note| %>
-      <div class="note micropost-big">
-        <div class="info">
-          <h2><%= note.title %></h2>
-          <%= simple_format note.content %>
+<div class="row">
+  <div class="notes">
+    <% @notes.each do |note| %>
+        <div class="note span7">
+          <%= link_to note do  %>
+              <h2 class="title"><%= note.title %></h2>
+          <% end %>
+          <%= link_to note, class: 'preview' do  %>
+              <%=truncate(note.content, length: 250) %>
+              <span class="read-all">
+                继续阅读
+              <i class="icon-double-angle-right"></i>
+            </span>
+          <% end %>
         </div>
 
-      </div>
-  <% end %>
+    <% end %>
+  </div>
+  <%= link_to 'New Note', new_note_path %>
 </div>
 
-<h1>Listing notes</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Content</th>
-    <th>User</th>
-    <th>Public</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
-<% @notes.each do |note| %>
-  <tr>
-    <td><%= note.title %></td>
-    <td><%= note.content %></td>
-    <td><%= note.user_id %></td>
-    <td><%= note.public %></td>
-    <td><%= link_to 'Show', note %></td>
-    <td><%= link_to 'Edit', edit_note_path(note) %></td>
-    <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Note', new_note_path %>

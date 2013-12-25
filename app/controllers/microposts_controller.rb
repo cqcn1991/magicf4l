@@ -1,14 +1,23 @@
 # encoding: utf-8
 class MicropostsController < ApplicationController
-  before_filter :authenticate_user!, only: [:like, :destroy, :new]
+  before_filter :authenticate_user!, only: [:like, :destroy, :create]
   require 'nokogiri'
   require 'open-uri'
   # GET /microposts
   # GET /microposts.json
   def index
-    @microposts = Micropost.all
-    @new_microposts =  Micropost.order("created_at DESC").first(4)
-    @popular_microposts = Micropost.find_with_reputation(:likes, :all, order: 'likes desc').first(4)
+    new_link =  Micropost.where(video: false).order("created_at DESC").first(6)
+    hot_link = Micropost.where(video: false).find_with_reputation(:likes, :all, order: 'likes desc').first(6)
+    new_video =  Micropost.where(video: true).order("created_at DESC").first(6)
+    hot_video = Micropost.where(video: true).find_with_reputation(:likes, :all, order: 'likes desc').first(6)
+
+    microposts = new_link + hot_link + new_video + hot_video
+    microposts.uniq!
+    @discover_microposts = microposts.shuffle.first(12)
+
+    #@microposts = Micropost.paginate(:page => params[:page], :per_page => 9)
+
+    @discover_microposts =Micropost.order("created_at DESC").first(6)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -62,7 +71,7 @@ class MicropostsController < ApplicationController
     @micropost.user=current_user
     respond_to do |format|
       if @micropost.save
-        format.html { redirect_to index2_microposts_url, notice: 'Micropost was successfully created.' }
+        format.html { redirect_to microposts_url, notice: 'Micropost was successfully created.' }
         format.json { render json: @micropost, status: :created, location: @micropost }
       else
         format.html { render action: "new" }
@@ -107,11 +116,10 @@ class MicropostsController < ApplicationController
     #else
 
     #在sqlite中random,在PG中如何？
-      @all_microposts =  Micropost.order('Random()').limit(5)
+      @all_microposts =  Micropost.where(video: true).order('Random()').limit(5)
       #order("RAND()").limit(1)
       @micropost=@all_microposts.first
       @microposts = @all_microposts[1..3]
-      @new_microposts =  Micropost.order("created_at DESC").first(4)
     #end
     #@new_microposts =  Micropost.order("created_at DESC").first(5)
 
@@ -133,7 +141,7 @@ class MicropostsController < ApplicationController
   end
 
   def shuffle_again
-    @microposts = Micropost.all.shuffle.first(3)
+    @microposts = Micropost.where(video: true).shuffle.first(3)
   end
 
   def like

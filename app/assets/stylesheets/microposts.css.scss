@@ -1,6 +1,8 @@
 // Place all the styles related to the microposts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
 @font-face {
   font-family: 'gotham_htfbold'; /*a name to be used later*/
   font-style: normal;
@@ -13,11 +15,13 @@
   }
 
 .new_micropost {
-  #micropost_video_url{
-    width: 50%
+  #micropost_video_url, #micropost_content{
+    width: 50%;
+  }
+  #micropost_content{
+    height: 50px
   }
 }
-
 
 .center {
   float: none;
@@ -25,7 +29,6 @@
   margin-right: auto;
   text-align:center
 }
-
 
 .logo-title{
   font-family: "freight-sans-pro","Myriad Pro","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
@@ -55,9 +58,11 @@
   h1, h2, h3, h4, h5,.cover-micropost-title, a, label, i, span, p{
     color: #E0E0E0;
   }
-  .microposts, .new_microposts {
-    h1, h2, h3, h4, h5,.cover-micropost-title, a, label, i {
+  .microposts, .discover_microposts {
+    h1, h2, h3, h4, h5, h6, .cover-micropost-title, a, label, i,span, p {
       color: #999999;
+      transition: all 0.25s ease-in-out 0s;
+      //color: #ffffff;
     }
     .like .icon-heart-red{
       color: red;
@@ -131,10 +136,7 @@
   color: red;
 }
 
-.title {
-  //margin-top: 5px;
-  //height: 30px;
-  //overflow: hidden;
+.cover-title {
   width: 100%;
   .cover-micropost-title {
     font-weight: bolder;
@@ -185,7 +187,7 @@
   .info {
     padding: 0px 20px 5px;
     //height: 50px;
-    .like {
+    .like_info {
       position:absolute;
       right:10px;
       bottom:10px;
@@ -293,16 +295,12 @@
   h5{
     color: inherit;
   }
+
   &:hover {
     background: none repeat scroll 0 0 lightgrey;
   }
   .info {
     margin-left: 5px;
-    .title {
-/*      overflow: hidden;
-      white-space: nowrap; *//* Don't forget this one *//*
-      text-overflow: ellipsis;*/
-    }
     .like {
       position:absolute;
       right:10px;
@@ -325,51 +323,84 @@
    margin-bottom: 20px;
 }
 
-.new_microposts .micropost {
+
+
+.discover_microposts .micropost {
   position: relative;
   background: none repeat scroll 0 0 #2A2A2A;
-  transition: background 0.2s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
   margin-bottom: 20px;
-  //oveow-y: hidden;rfl
-  overflow-x: hidden;
-  //height: 225px;
-  .img {
-    width:100%; height:180px;
+  overflow: hidden;
+  &:hover {
+    background: none repeat scroll 0 0 lighten(#2A2A2A, 20%);
+    h6,h4,p,span{
+      color: #ffffff;
+    }
+  }
+  &:hover .img_wrapper{
+    opacity: 0.7;
+  }
+  a.external{
+    text-decoration: none;
+  }
+  .link_info{
+
+    height: 210px;
+    .center_content{
+      z-index: 2;
+      padding: 0px 20px;
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -60px;
+      margin-left: -150px;
+      //display: inline-block;
+      //vertical-align: middle;
+      //white-space: normal;
+    }
+    .center_helper{
+      //display: inline-block;
+      //vertical-align: middle;
+      //height:100%;
+    }
+    h4 {
+      display: inline;
+    }
+  }
+   .img {
+    width:100%; height:210px;
     background-repeat:  no-repeat;
     background-position: center;
     background-size:150%;
   }
+  img{
+    width:100%;
+  }
+  .img_wrapper{
+    opacity: 0.1;
+    display: block;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition: opacity 0.25s ease-in-out;
+    -ms-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
+
+  }
   h5{
     color: inherit;
   }
-  img {
-    max-width: none;
-    display: block;
-    margin: 0 auto;
-    //position:absolute;
-    //top:0;bottom:0;
-    //margin:auto;
-    //min-height:50px
-  }
-  &:hover {
-    background: none repeat scroll 0 0 lightgrey;
-  }
 
-  .cover{
-    //float: left;
-  }
   .info {
-    padding: 0px 20px 5px;
-    //height: 50px;
-    .title {
-      /*      overflow: hidden;
-            white-space: nowrap; *//* Don't forget this one *//*
-            text-overflow: ellipsis;*/
-    }
-    .like {
+    padding: 0px 20px 0px;
+    .like_info {
       position:absolute;
       right:10px;
       bottom:10px;
+      a{
+        text-decoration: none;
+      }
     }
   }
 
@@ -495,8 +526,4 @@ textarea#micropost_content {
     margin: 100px 7px;
     text-align: center;
   }
-}
-
-.news_collection .micropost-big {
-
 }

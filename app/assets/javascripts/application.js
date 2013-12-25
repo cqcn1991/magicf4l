@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require imagesloaded.pkgd
 //= require masonry.pkgd
+//= require jquery.autosize
+//= require bootstrap
 //= require_tree .
 
 

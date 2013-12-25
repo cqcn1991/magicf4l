@@ -1,9 +1,8 @@
 Shuffle::Application.routes.draw do
-  resources :notes
-
-
+  resources :notes  do
+    resources :comments
+  end
   resources :news_items
-
 
   devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks", :registrations => "registrations" }
 
@@ -36,7 +35,7 @@ Shuffle::Application.routes.draw do
     end
   end
 
-  root :to => 'static_pages#home'
+  root :to => 'microposts#shuffle'
 
   match 'intro' => 'static_pages#intro'
   match 'home' => 'static_pages#home'

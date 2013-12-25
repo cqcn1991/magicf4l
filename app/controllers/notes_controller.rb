@@ -1,4 +1,8 @@
 class NotesController < ApplicationController
+  before_filter :authenticate_user!, only: [:destroy, :create]
+
+  layout "note"
+
   # GET /notes
   # GET /notes.json
   def index
@@ -14,6 +18,8 @@ class NotesController < ApplicationController
   # GET /notes/1.json
   def show
     @note = Note.find(params[:id])
+    @comments = @note.comments
+    @comment = Comment.new
 
     respond_to do |format|
       format.html # show.html.erb

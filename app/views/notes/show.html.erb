@@ -1,25 +1,42 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="note">
+    <h2 class="title"><%= @note.title %></h2>
+    <%= simple_format @note.content%>
+    <%= link_to 'Edit', edit_note_path(@note) %> |
+    <%= link_to 'Back', notes_path %>
+  </div>
+  <div class="comments">
+    <% @comments.each do |comment|%>
+       <div class="comment group" >
+         <div class="avatar">
+           <%  if comment.user && comment.user.image %>
+             <%= image_tag comment.user.image  %>
+           <% else %>
+             <%= image_tag "http://p1.zhimg.com/c0/e3/c0e310228_xs.jpg" %>
+           <% end %>
+         </div>
+         <div class="comment_body">
+           <div class="user"> <%= comment.user.name if comment.user %></div>
+           <div class="content">
+             <%= simple_format comment.content %>
+           </div>
+         </div>
+         </div>
 
-<p>
-  <b>Title:</b>
-  <%= @note.title %>
-</p>
+    <% end %>
 
-<p>
-  <b>Content:</b>
-  <%= @note.content %>
-</p>
+    </div>
+    <div class="new_comment">
+      <h4>添加评论</h4>
+      <%= form_for([@note, @note.comments.build]) do |f| %>
+          <div class="field">
+            <%#= f.label :content %>
+            <%= f.text_area :content, placeholder: "写下你的评论" %>
+          </div>
+          <div>
+            <%= f.submit '评论', class: "btn" %>
+          </div>
+      <% end %>
+    </div>
+  </div>
 
-<p>
-  <b>User:</b>
-  <%= @note.user_id %>
-</p>
-
-<p>
-  <b>Public:</b>
-  <%= @note.public %>
-</p>
-
-
-<%= link_to 'Edit', edit_note_path(@note) %> |
-<%= link_to 'Back', notes_path %>
