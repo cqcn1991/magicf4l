@@ -1,7 +1,6 @@
 # encoding: UTF-8
-
 class Micropost < ActiveRecord::Base
-  attr_accessible :content, :title, :video_url, :article_url, :user_id, :video_thumbnail_url, :video_logo_url, :video_id, :username
+  attr_accessible :content, :title, :video_url, :article_url, :user_id, :video_thumbnail_url, :video_logo_url, :video_id, :username, :video
   belongs_to :user
   #mount_uploader :snapshot, SnapshotUploader
   has_reputation :likes, source: :user, aggregated_by: :sum

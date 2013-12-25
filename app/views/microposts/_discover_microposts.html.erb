@@ -3,14 +3,16 @@
 
                 <%= link_to micropost.auto_link, target: '_blank', class: 'external' do %>
                   <div class="link_info">
-                    <div class="center_content <%= 'img-title' if micropost.video_logo_url %>">
-                      <h4 class="title"><%= micropost.title %> </h4>
-                      <% unless micropost.video?  %>
-                          <h6><%= micropost.source %></h6>
-                      <% end %>
-                      <p><%= micropost.content %></p>
+
+
+                        <div class="center_content <%= 'img-title' if micropost.video_logo_url %>">
+                          <h4 class="title"><%= micropost.title %> </h4>
+                          <% unless micropost.video?  %>
+                              <h6><%= micropost.source %></h6>
+                          <% end %>
+                          <p><%= micropost.content %></p>
+
                     </div>
-                    <div class="center_helper"></div>
                   </div>
                   <%# if micropost.is_video?  %>
                       <div class="img img_wrapper"

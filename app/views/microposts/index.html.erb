@@ -8,6 +8,23 @@
 
   <div class="discover_microposts span12">
     <div class="row">
+      <div class="note_micropost span8 hover">
+        <%= link_to @note, class: 'external' do %>
+            <div class="link_info">
+                <div class="center_content">
+                  <h2 class="title"><%= @note.title %> </h2>
+                  <p><%= truncate(@note.content, length: 150) %></p>
+                </div>
+            </div>
+        <% end %>
+        <div class="info">
+              <%= link_to @note.user do %>
+                  <h6>Post by <%= @note.user.name  || 'just4magic'  %></h6>
+              <% end %>
+        </div>
+      </div>
+
+
       <%= render partial: "discover_microposts", collection: @discover_microposts, as: :micropost  %>
 
 

@@ -24,7 +24,6 @@ gem 'will_paginate', '~> 3.0'
 
 gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'
-gem 'jquery-ui-rails'
 gem 'activerecord-reputation-system'
 gem 'cancan'
 

@@ -12,5 +12,9 @@ $(".jump-to-cover").click(function() {
         scrollTop: $(".cover-micropost").offset().top
     }, 800);
 });
+$('textarea#micropost_content').autosize();
+$(".micropost").hover( function(e) {
+    $(".note_micropost").removeClass('hover')
+});
 
 

@@ -17,8 +17,8 @@ class MicropostsController < ApplicationController
 
     #@microposts = Micropost.paginate(:page => params[:page], :per_page => 9)
 
-    @discover_microposts =Micropost.order("created_at DESC").first(6)
-
+    @discover_microposts =Micropost.order("created_at DESC").first(7)
+    @note = Note.first
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @microposts }
@@ -58,16 +58,6 @@ class MicropostsController < ApplicationController
   # POST /microposts.json
   def create
     @micropost = Micropost.new(params[:micropost])
-    if   @micropost.video_url or  @micropost.article_url
-      if !@micropost.video_url.empty?
-        url = @micropost.video_url
-      elsif !@micropost.article_url.empty?
-        url = @micropost.article_url
-      end
-      #doc = Nokogiri::HTML(open(url))
-      #@micropost.title = doc.css("title").text.delete("—在线播放—优酷网，视频高清在线观看")
-    end
-
     @micropost.user=current_user
     respond_to do |format|
       if @micropost.save

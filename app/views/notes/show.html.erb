@@ -2,8 +2,10 @@
   <div class="note">
     <h2 class="title"><%= @note.title %></h2>
     <%= simple_format @note.content%>
-    <%= link_to 'Edit', edit_note_path(@note) %> |
-    <%= link_to 'Back', notes_path %>
+
+    <% if @note.user == current_user %>
+    <%= link_to 'Edit', edit_note_path(@note) %>
+    <% end %>
   </div>
   <div class="comments">
     <% @comments.each do |comment|%>
