@@ -18,9 +18,10 @@ gem 'carrierwave'
 #gem 'wkhtmltopdf-heroku'
 #gem 'newrelic_rpm'
 
+gem 'activeadmin'
 
-gem 'will_paginate-bootstrap'
-gem 'will_paginate', '~> 3.0'
+#gem 'will_paginate-bootstrap'
+#gem 'will_paginate', '~> 3.0'
 
 gem 'omniauth-twitter'
 gem 'omniauth-weibo-oauth2'

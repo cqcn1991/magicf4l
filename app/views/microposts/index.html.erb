@@ -12,8 +12,8 @@
         <%= link_to @note, class: 'external' do %>
             <div class="link_info">
                 <div class="center_content">
-                  <h2 class="title"><%= @note.title %> </h2>
-                  <p><%= truncate(@note.content, length: 150) %></p>
+                  <h1 class="title white"><%= @note.title %> </h1>
+                  <p class="white"><%= truncate(@note.content, length: 150) %></p>
                 </div>
             </div>
         <% end %>
@@ -23,8 +23,14 @@
               <% end %>
         </div>
       </div>
-
-
+      <%= render partial: "discover_microposts", locals: { micropost: @pin_micropost } %>
+      <div class="shuffle-btn span4">
+        <div class="link_info">
+          <div class="center_content">
+            <h2 class="title white"><%= link_to '添加..', new_micropost_path %></h2>
+          </div>
+        </div>
+      </div>
       <%= render partial: "discover_microposts", collection: @discover_microposts, as: :micropost  %>
 
 

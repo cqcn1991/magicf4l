@@ -14,7 +14,7 @@ $(".jump-to-cover").click(function() {
 });
 $('textarea#micropost_content').autosize();
 $(".micropost").hover( function(e) {
-    $(".note_micropost").removeClass('hover')
+    $(".note_micropost").toggleClass('hover')
 });
 
 

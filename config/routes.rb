@@ -35,7 +35,7 @@ Shuffle::Application.routes.draw do
     end
   end
 
-  root :to => 'microposts#shuffle'
+  root :to => 'microposts#index'
 
   match 'intro' => 'static_pages#intro'
   match 'home' => 'static_pages#home'

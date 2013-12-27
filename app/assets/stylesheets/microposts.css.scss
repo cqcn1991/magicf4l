@@ -68,6 +68,9 @@
     .like .icon-heart-red{
       color: red;
     }
+    .white{
+      color: #ffffff;
+    }
   }
   .discover_microposts{
     h1, h2, h3, h4, h5, h6, .cover-micropost-title, a, label, i,span, p {
@@ -77,6 +80,9 @@
     }
     .like .icon-heart-red{
       color: red;
+    }
+    .white{
+      color: #ffffff;
     }
   }
   .pagination {
@@ -268,25 +274,32 @@
   }
   }
 
-.microposts .shuffle-btn {
+ .shuffle-btn {
   &:hover{
     background-color: #E74C3C;
   }
-  padding: 12px 18px 13px;
+  margin-bottom: 20px;
   background: none repeat scroll 0 0 #FF6666;
   border: medium none;
   border-radius: 6px 6px 6px 6px;
   box-shadow: none;
   text-decoration: none;
   text-shadow: none;
-
   transition: all 0.25s ease 0s;
   text-align: center;
   vertical-align: middle;
  .white {
-   color: white;
+   //color: white;
    font-family: "微软雅黑",Arial,sans-serif;
  }
+}
+
+.microposts .shuffle-btn{
+  padding: 12px 0px 16px;
+}
+
+.discover_microposts .shuffle-btn{
+  padding: 0px 0px 6px;
 }
 
 .microposts .micropost {
@@ -519,24 +532,26 @@
 
 .note_micropost {
   position: relative;
-  background: none repeat scroll 0 0 #2A2A2A;
+  background: none repeat scroll 0 0 #48C9B0;
   transition: all 0.25s ease-in-out 0s;
   margin-bottom: 20px;
   overflow: hidden;
   p{
     word-wrap: break-word;
-    font-family: 'Open Sans','Helvetica Neue',Arial,"Hiragino Sans GB",sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.7;
+    font-family: '黑体',Arial,"Hiragino Sans GB",sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
   }
   .title{
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 1.4;
+    font-size: 36px;
+    font-family: '黑体',Arial,"Hiragino Sans GB",sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
   }
   &:hover, &.hover {
-    background: none repeat scroll 0 0 lighten(#2A2A2A, 30%);
+    //background: none repeat scroll 0 0 lighten(#2A2A2A, 30%);
+    background: none repeat scroll 0 0 #48C9B0;
     h6,h4,p,span{
       color: #ffffff;
     }
@@ -548,13 +563,13 @@
     color: inherit;
   }
   .link_info{
-    height: 180px;
+    height: 265px;
     .center_content{
       z-index: 2;
       padding: 0px 20px;
       position:absolute;
       top: 50%;
-      margin-top: -100px;
+      margin-top: -120px;
     }
     h4 {
       display: inline;
@@ -565,5 +580,12 @@
   }
 }
 
-
+.latest_micropost{
+  background: none repeat scroll 0 0 #2A2A2A;
+  padding: 0, 20px;
+  margin-bottom: 20px;
+  .link_info{
+    height: 100px;
+  }
+}
 

@@ -1,23 +1,29 @@
+<div class="row">
+  <div class="span8">
+    <h2 class="cover-micropost-title"><%= @user.name %>的推荐</h2>
+    <div class="list">
+      <% @microposts.each do |micropost| %>
+          <div>
+            <i class="icon-heart"></i>
+            <span><%= micropost.reputation_for(:likes).to_i %></span>
+            <%= link_to micropost.title, micropost.video_url.presence || micropost.article_url%>
+            <div class="pull-right">
+              <% if micropost.user = current_user %>
+                  <%= link_to '删除', micropost, method: :delete, data: { confirm: 'Are you sure?' }, class: "pull-right" %>
+              <% end %>
+
+            </div>
+
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>
 
 
-<!--<h2 class="cover-micropost-title">我推荐的</h2>
-<div class="list">
-  <% @my_microposts.each do |micropost| %>
-      <div>
-        <%= link_to micropost.title, micropost.video_url.presence || micropost.article_url%>
-        <div class="pull-right">
-          <%= link_to 'Destroy', micropost, method: :delete, data: { confirm: 'Are you sure?' }, class: "pull-right" %>
-          <i class="icon-heart"></i>
-          <span><%= micropost.reputation_for(:likes).to_i %></span>
-        </div>
 
-      </div>
-  <% end %>
-</div>-->
-
-<h2 class="cover-micropost-title">我喜欢的</h2>
-
-<%#= image_tag(@user.name) %>
+<!--
+  <h2 class="cover-micropost-title">我喜欢的</h2>
 <div class="microposts">
   <div class="row" id="microposts-list">
     <% @microposts.each do |micropost| %>
@@ -49,4 +55,4 @@
 
     <% end %>
   </div>
-</div>
+</div>-->

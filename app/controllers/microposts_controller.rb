@@ -6,19 +6,15 @@ class MicropostsController < ApplicationController
   # GET /microposts
   # GET /microposts.json
   def index
-    new_link =  Micropost.where(video: false).order("created_at DESC").first(6)
-    hot_link = Micropost.where(video: false).find_with_reputation(:likes, :all, order: 'likes desc').first(6)
-    new_video =  Micropost.where(video: true).order("created_at DESC").first(6)
-    hot_video = Micropost.where(video: true).find_with_reputation(:likes, :all, order: 'likes desc').first(6)
+    hot = Micropost.find_with_reputation(:likes, :all, order: 'likes desc').first(6).shuffle.first(3)
+    #video = Micropost.where(video: true).shuffle.first(6)
+    new = Micropost.order("created_at DESC").first(6).shuffle.first(3)
+    microposts = new + hot
+    #microposts.uniq!
+    @discover_microposts =microposts.first(6).shuffle
 
-    microposts = new_link + hot_link + new_video + hot_video
-    microposts.uniq!
-    @discover_microposts = microposts.shuffle.first(12)
-
-    #@microposts = Micropost.paginate(:page => params[:page], :per_page => 9)
-
-    @discover_microposts =Micropost.order("created_at DESC").first(7)
     @note = Note.first
+    @pin_micropost = Micropost.where(important: true).first || Micropost.order("created_at DESC").first
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @microposts }
