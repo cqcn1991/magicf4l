@@ -13,7 +13,7 @@ class MicropostsController < ApplicationController
     #microposts.uniq!
     @discover_microposts =microposts.first(6).shuffle
 
-    @note = Note.first
+    @note = Note.first || Micropost.order("created_at DESC").first
     @pin_micropost = Micropost.where(important: true).first || Micropost.order("created_at DESC").first
     respond_to do |format|
       format.html # index.html.erb

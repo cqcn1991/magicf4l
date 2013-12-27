@@ -1,10 +1,16 @@
 Shuffle::Application.routes.draw do
+  root :to => 'microposts#index'
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   resources :notes  do
     resources :comments
   end
   resources :news_items
 
   devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks", :registrations => "registrations" }
+  ActiveAdmin.routes(self)
 
   resources :microposts  do
     collection do
@@ -35,7 +41,7 @@ Shuffle::Application.routes.draw do
     end
   end
 
-  root :to => 'microposts#index'
+
 
   match 'intro' => 'static_pages#intro'
   match 'home' => 'static_pages#home'
