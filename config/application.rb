@@ -72,6 +72,7 @@ module Shuffle
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
     config.assets.initialize_on_precompile = false
+    config.assets.precompile += ['active_admin.css.scss', 'active_admin.js']
 
     config.paths['app/views'] << "app/views/devise"
   end

@@ -18,7 +18,7 @@ gem 'carrierwave'
 #gem 'wkhtmltopdf-heroku'
 #gem 'newrelic_rpm'
 
-gem 'activeadmin'
+gem 'activeadmin','0.5.0'
 
 #gem 'will_paginate-bootstrap'
 #gem 'will_paginate', '~> 3.0'
