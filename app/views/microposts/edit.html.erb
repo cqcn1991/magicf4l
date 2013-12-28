@@ -1,6 +1,35 @@
 <h1>Editing micropost</h1>
 
-<%= render 'form' %>
+<%#= render 'form' %>
+
+<%= form_for(@micropost) do |f| %>
+    <% if @micropost.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
+
+          <ul>
+            <% @micropost.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <div class="field">
+      <h2>分享网址/视频</h2>   <span>网址，比如http://v.youku.com/v_show/id_XMTUyMzg1NTA0.html</span><br />
+      <%= f.text_field :video_url %>
+    </div>
+    <div class="field">
+      <%= f.label '评论(可选)' %>
+      <%= f.text_area :content, placeholder: '有什么想说的？' %>
+    </div>
+    <div class="field">
+      <%= f.label 'important' %>
+      <%= f.check_box :important %>
+    </div>
+    <div class="actions">
+      <%= f.submit  '提交', class: 'btn' %>
+    </div>
+<% end %>
 
 <%= link_to 'Show', @micropost %> |
 <%= link_to 'Back', microposts_path %>

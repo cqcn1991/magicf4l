@@ -28,7 +28,6 @@ gem 'omniauth-weibo-oauth2'
 gem 'activerecord-reputation-system'
 gem 'cancan'
 
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

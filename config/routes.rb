@@ -1,8 +1,10 @@
 Shuffle::Application.routes.draw do
   root :to => 'microposts#index'
 
+=begin
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+=end
 
   resources :notes  do
     resources :comments
@@ -10,8 +12,6 @@ Shuffle::Application.routes.draw do
   resources :news_items
 
   devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks", :registrations => "registrations" }
-  ActiveAdmin.routes(self)
-
   resources :microposts  do
     collection do
       get :shuffle
