@@ -317,35 +317,36 @@
   background: none repeat scroll 0 0 #2A2A2A;
   transition: background 0.2s ease-in-out 0s;
   margin-bottom: 20px;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  display: inline-block;
+//  overflow-y: hidden;
+//  overflow-x: hidden;
   height: 95px;
-  h5{
-    color: inherit;
-  }
-
   &:hover {
     background: none repeat scroll 0 0 lightgrey;
   }
-  .info {
-    margin-left: 5px;
-    .like {
-      position:absolute;
-      right:10px;
-      bottom:10px;
-    }
-  }
 
-  .cover-linkable{
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
+  h5{
+    color: inherit;
+  }
+  img.cover{
+    margin-right: 10px;
+  }
+  .like {
     position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1
+    right: 10px;
+    bottom: 10px;
+    z-index: 5;
   }
 }
+
+@media (max-width: 767px) {
+  .shuffle_microposts{
+    .info h6{
+      margin-top: 30px;
+    }
+  }
+}
+
 
 .popular_microposts {
    margin-bottom: 20px;
