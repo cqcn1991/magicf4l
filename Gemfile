@@ -36,7 +36,7 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
   #gem 'sunspot_solr'
   # Capistrano stuff
-  gem 'capistrano'
+  gem 'capistrano', '2.15.5'
   gem 'capistrano-unicorn', :git => 'https://github.com/sosedoff/capistrano-unicorn.git', :branch => 'master', :require => false
 end
 

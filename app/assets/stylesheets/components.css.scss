@@ -1,0 +1,20 @@
+.btn-shuffle {
+  &:hover{
+    background-color: #E74C3C;
+    text-decoration: none;
+  }
+  text-align: center;
+  background: none repeat scroll 0 0 #FF6666;
+  padding: 12px 0 18px;
+  color: white !important;
+  font-family: "微软雅黑",Arial,sans-serif;
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: bold;
+  border: medium none;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: none;
+  text-decoration: none;
+  text-shadow: none;
+  transition: all 0.25s ease 0s;
+}

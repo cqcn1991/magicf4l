@@ -308,8 +308,8 @@
   padding: 12px 0px 16px;
 }
 
-.discover_microposts .shuffle-btn{
-  padding: 0px 0px 6px;
+.discover_microposts .btn-shuffle{
+  margin-bottom: 25px;
 }
 
 .microposts .micropost {
@@ -549,20 +549,19 @@
   overflow: hidden;
   p{
     word-wrap: break-word;
-    font-family: '黑体',Arial,"Hiragino Sans GB",sans-serif;
+    font-family: "微软雅黑",Arial,"Hiragino Sans GB",sans-serif;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.2;
   }
   .title{
     font-size: 36px;
-    font-family: '黑体',Arial,"Hiragino Sans GB",sans-serif;
+    font-family: "微软雅黑",Arial,"Hiragino Sans GB",sans-serif;
     font-weight: bold;
     line-height: 1.1;
   }
-  &:hover, &.hover {
-    //background: none repeat scroll 0 0 lighten(#2A2A2A, 30%);
-    background: none repeat scroll 0 0 #48C9B0;
+  &:hover {
+    background-color: lighten(	#48C9B0, 20%);
     h6,h4,p,span{
       color: #ffffff;
     }

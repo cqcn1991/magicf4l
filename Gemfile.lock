@@ -261,7 +261,7 @@ DEPENDENCIES
   activerecord-reputation-system
   bootstrap-sass (= 2.3.2)
   cancan
-  capistrano
+  capistrano (= 2.15.5)
   capistrano-unicorn!
   carrierwave
   coffee-rails (~> 3.2.1)
