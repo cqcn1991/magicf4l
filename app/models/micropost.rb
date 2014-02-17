@@ -11,6 +11,8 @@ class Micropost < ActiveRecord::Base
   validates_uniqueness_of :video_id, allow_blank: true
   validates :video_url, presence: true, uniqueness: true
 
+  default_scope order('created_at desc')
+
   def auto_link
     if self.video?
        self
