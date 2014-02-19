@@ -41,6 +41,8 @@ Shuffle::Application.routes.draw do
   match 'intro' => 'static_pages#intro'
   match 'home' => 'static_pages#home'
 
+  get 'stats' => 'static_pages#stats'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

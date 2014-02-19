@@ -6,4 +6,9 @@ class StaticPagesController < ApplicationController
   def home
     render :layout => false
   end
+
+  def stats
+    @user_count = User.all.count
+    @microposts_count = Micropost.all.count
+  end
 end
