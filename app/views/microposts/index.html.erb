@@ -1,25 +1,16 @@
 <div class="row">
   <div class="discover_microposts span12">
     <div class="row">
-      <div class="note_micropost span8">
-        <%= link_to @note, class: 'external' do %>
-            <div class="link_info">
-                <div class="center_content">
-                  <h1 class="title white"><%= @note.title %> </h1>
-                  <p class="white"><%= truncate(@note.content, length: 100) %></p>
-                </div>
-            </div>
-        <% end %>
-        <div class="info">
-              <%= link_to @note.user do %>
-                  <h6>Post by <%= @note.user.name  || 'just4magic'  %></h6>
-              <% end %>
+      <div class="micropost-notice span4 pull-right">
+        <div class="content">
+          <h4 class="title">欢迎来到just4Magic</h4>
+          <h6>目前已经可以使用微博登陆，QQ群：198384613，欢迎加入</h6>
         </div>
+        <h6 class="author">Post by just4Magic</h6>
       </div>
-      <%= render partial: "discover_microposts", locals: { micropost: @pin_micropost } %>
-      <%= link_to '添加', new_micropost_path, class: 'btn-shuffle span4' %>
+      <%#= render partial: "discover_microposts", locals: { micropost: @pin_micropost } %>
       <%= render partial: "discover_microposts", collection: @discover_microposts, as: :micropost  %>
-
+      <%= link_to '更多', shuffle_microposts_path, class: 'btn-shuffle span4' %>
 
     </div>
     <div class="center">

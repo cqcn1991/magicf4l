@@ -599,3 +599,27 @@
   }
 }
 
+.micropost-notice{
+  background-color:  #2A2A2A;
+  transition: all 0.25s ease-in-out 0s;
+  margin-bottom: 20px;
+  &:hover{
+    background-color: #5D5D5D;
+    .title, h6.author{
+      color: white;
+    }
+  }
+  .content{
+    height: 180px;
+    @include box-sizing(border-box);
+    padding: 60px 20px 0 ;
+    .title{
+      display: inline;
+    }
+  }
+  .author{
+    padding: 0 20px;
+  }
+}
+
+
