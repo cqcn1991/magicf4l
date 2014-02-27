@@ -29,17 +29,12 @@
         <% else %>
             <%= link_to '登陆',new_user_session_path %>
             <%#= link_to '微博登陆',user_omniauth_authorize_path(:weibo) %>
-            <%#= link_to '申请内测',intro_path %>
 
             <%= link_to '注册', new_user_registration_path %>
         <% end %>
 
-        <%#= link_to 'Admin', admin_panel_microposts_path %>
-      </div>
-      <% flash.each do |key, value| %>
-          <%= content_tag(:div, value, class: "alert alert-#{key}") %>
-      <% end %>
 
+      </div>
     </div>
 
   </div>
