@@ -1,14 +1,50 @@
 <div class="row">
   <div class="discover_microposts span12">
     <div class="row">
-      <div class="micropost-notice span4 pull-right">
-        <div class="content">
-          <h4 class="title">欢迎来到just4Magic</h4>
-          <h6>目前已经可以使用微博登陆，QQ群：198384613，欢迎加入</h6>
+      <div class="pull-right span4 sidebar">
+        <div class="row">
+          <div class="micropost-notice span4">
+            <div class="content">
+              <h4 class="title">欢迎来到just4Magic</h4>
+              <h6>目前已经可以使用微博登陆，QQ群：198384613，欢迎加入</h6>
+            </div>
+            <div class="info">
+              <h6>Post by just4Magic</h6>
+            </div>
+          </div>
+          <div class="micropost-notice new span4">
+            <div class="content">
+              <h2 class="title">有什么最新的发现？</h2>
+              <%= form_for(@new_micropost) do |f| %>
+                <% if @new_micropost.errors.any? %>
+                  <div id="error_explanation">
+                    <h2><%= pluralize(@micropost.errors.count, "error") %> prohibited this micropost from being saved:</h2>
+                    <ul>
+                      <% @new_micropost.errors.full_messages.each do |msg| %>
+                        <li><%= msg %></li>
+                      <% end %>
+                    </ul>
+                  </div>
+                <% end %>
+                <div class="field">
+                  <%= f.text_field :video_url, placeholder: '输入链接地址' %>
+                </div>
+                <div class="actions">
+                  <%= f.submit  '提交', class: 'btn pull-right' %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+
+
         </div>
-        <h6 class="author">Post by just4Magic</h6>
+
+
       </div>
-      <%#= render partial: "discover_microposts", locals: { micropost: @pin_micropost } %>
+
+
+
+
       <%= render partial: "discover_microposts", collection: @discover_microposts, as: :micropost  %>
       <%= link_to '更多', shuffle_microposts_path, class: 'btn-shuffle span4' %>
 

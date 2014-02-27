@@ -1,6 +1,6 @@
 # encoding: utf-8
 class MicropostsController < ApplicationController
-  before_filter :authenticate_user!, only: [:like, :destroy, :create]
+  before_filter :authenticate_user!, only: [:like, :destroy, :edit]
   require 'nokogiri'
   require 'open-uri'
   # GET /microposts
@@ -10,8 +10,8 @@ class MicropostsController < ApplicationController
     new = Micropost.first(3)
     microposts = new + random
     microposts.uniq!
-    @discover_microposts =microposts.first(7)
-    @pin_micropost = Micropost.where(important: true).first || Micropost.first
+    @discover_microposts =microposts.first(6)
+    @new_micropost = Micropost.new
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @microposts }

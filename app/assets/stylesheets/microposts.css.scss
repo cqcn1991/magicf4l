@@ -15,7 +15,7 @@
     color:#FF4F4F;
   }
 
-.new_micropost {
+.new-micropost {
   #micropost_video_url, #micropost_content{
     width: 50%;
   }
@@ -601,6 +601,31 @@
 
 .micropost-notice{
   background-color:  #2A2A2A;
+  height: 220px;
+  &.new{
+    background-color:  #3498DB;
+    .title{
+      color: white;
+    }
+    &:hover{
+      background-color: #5DADE2;
+    }
+    form{
+      margin-top: 10px;
+      .field {
+        margin-top: 10px;
+        input{
+          width: 96%;
+        }
+      }
+      .actions{
+        margin-top: 5px;
+        .btn{
+          background-image: none;
+        }
+      }
+    }
+  }
   transition: all 0.25s ease-in-out 0s;
   margin-bottom: 20px;
   &:hover{
@@ -612,12 +637,13 @@
   .content{
     height: 180px;
     @include box-sizing(border-box);
-    padding: 60px 20px 0 ;
+    padding: 50px 20px 0 ;
     .title{
+      font-family: "微软雅黑",Arial,sans-serif;
       display: inline;
     }
   }
-  .author{
+  .info{
     padding: 0 20px;
   }
 }
